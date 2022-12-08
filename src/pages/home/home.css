@@ -2,6 +2,9 @@
 /* GENERAL */
 /*************************************/
 
+.section-hero {
+  height: 95vh;
+}
 .hero {
   display: flex;
   flex-direction: row;
@@ -190,14 +193,11 @@ span:nth-child(7) {
 /* SOCIAL MEDIA BOX */
 /*************************************/
 .hero-social--box {
-  position: absolute;
-  top: 110%;
-  left: 90%;
-
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 1.4em;
   align-items: end;
+  margin-bottom: 2em;
 }
 
 .hero-social--box:hover {

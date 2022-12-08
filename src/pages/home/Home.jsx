@@ -61,11 +61,11 @@ export default function Home() {
               className="email"
             />
           </div>
-        </div>
-        <div className="hero-img--box">
-          <span>
-            <img src={foto} alt="Walber Melo" />
-          </span>
+          <div className="hero-img--box">
+            <span>
+              <img src={foto} alt="Walber Melo" />
+            </span>
+          </div>
         </div>
       </section>
     </main>
