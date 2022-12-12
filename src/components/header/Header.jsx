@@ -1,8 +1,10 @@
 import "./header.css";
 import React from "react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/header/logo.svg";
+import { smoothNavigation } from "./smoothNavigation.js";
 
 function Header() {
+  smoothNavigation();
   return (
     <header className="header">
       <div className="header-logo fadeIn ">
@@ -22,7 +24,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="main-nav-link" href="#portofolio">
+              <a className="main-nav-link" href="#projects">
                 Projects
               </a>
             </li>

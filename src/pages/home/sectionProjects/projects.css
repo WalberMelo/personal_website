@@ -1,0 +1,49 @@
+/*************************************/
+/* SECTION PROJECTS */
+/*************************************/
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-projects > h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.div-projects {
+  margin-bottom: 4rem;
+}
+
+/* Project cells */
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+}
+
+.div-projects--details {
+  display: flex;
+  flex-direction: column;
+}
+.div-projects--details > img {
+  width: 70%;
+  height: 90%;
+  margin-bottom: 2rem;
+}
+
+.div-projects--details > h2 {
+  margin-bottom: 1.2rem;
+}
+
+.div-projects--details > p {
+  margin-bottom: 1rem;
+}
+
+.div-projects--details > div {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}

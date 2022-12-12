@@ -57,6 +57,7 @@
   padding-top: 0.4rem;
   padding-right: 2.5em;
   border-right: 1px solid;
+  text-decoration: none;
 }
 .nav-skills {
   border: none;
@@ -66,6 +67,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
   font-weight: 500;
   font-size: 1.2rem;
   transition: all 0.3s;
@@ -74,6 +76,7 @@
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #a7c8f7;
+  text-decoration: none;
 }
 
 .main-nav-link::after {
