@@ -13,7 +13,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 export function Hero() {
   return (
-    <section className="section-hero">
+    <section className="section-hero" id="hero">
       <div className="hero">
         <div className="hero-text--box">
           <div className="hero-text--greetings fadeIn">

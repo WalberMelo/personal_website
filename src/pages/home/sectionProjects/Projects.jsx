@@ -1,10 +1,6 @@
 import "./projects.css";
 import React from "react";
-
-//Components
 import melodyPhoto from "../../../assets/projects/app.jpeg";
-
-//Material UI //
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 export function Projects() {
