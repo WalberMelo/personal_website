@@ -22,6 +22,7 @@ export function Hero() {
               <Greeting />
             </div>
           </div>
+
           <div className="hero-text">
             <p className="hero-text--name">
               <span>Hi there, I'm</span>
@@ -62,6 +63,7 @@ export function Hero() {
             className="email"
           />
         </div>
+
         <div className="hero-img--box">
           <span>
             <img src={foto} alt="Walber Melo" />

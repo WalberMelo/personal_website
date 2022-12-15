@@ -141,7 +141,6 @@ export function Skills() {
             </div>
           </div>
         </IconContext.Provider>
-        ;
       </div>
     </section>
   );
