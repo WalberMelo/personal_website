@@ -2,6 +2,7 @@ import "./skills.css";
 import React from "react";
 import { DiScrum } from "react-icons/di";
 import { IconContext } from "react-icons";
+import Typography from "@mui/material/Typography";
 import {
   FaHtml5,
   FaCss3,
@@ -33,11 +34,11 @@ export function Skills() {
       <div className="section-border--line"></div>
       <div className="div-skills--title">
         <h1>My Skills</h1>
-        <p>
+        <Typography component={"span"}>
           Through my studies, projects and work experience, I’ve gained a solid
           foundation of web development concepts, and have dedicated a lot of my
           time to apply these concepts to real-world scenario and applications.
-        </p>
+        </Typography>
       </div>
       <div className="div-skills--stacks">
         <IconContext.Provider
@@ -48,43 +49,43 @@ export function Skills() {
             <div className="div-skills--grid">
               <div>
                 <FaHtml5 />
-                <p>HTML5</p>
+                <Typography component={"span"}>HTML5</Typography>
               </div>
               <div>
                 <FaCss3 />
-                <p>CSS3</p>
+                <Typography component={"span"}>CSS3</Typography>
               </div>
               <div>
                 <FaSass />
-                <p>SASS</p>
+                <Typography component={"span"}>SASS</Typography>
               </div>
               <div>
                 <FaBootstrap />
-                <p>Bootstrap</p>
+                <Typography component={"span"}>Bootstrap</Typography>
               </div>
               <div>
                 <SiStyledcomponents />
-                <p>Styled Component</p>
+                <Typography component={"span"}>Styled Component</Typography>
               </div>
               <div>
                 <SiMaterialui />
-                <p>Material UI</p>
+                <Typography component={"span"}>Material UI</Typography>
               </div>
               <div>
                 <SiJavascript />
-                <p>JavaScript</p>
+                <Typography component={"span"}>JavaScript</Typography>
               </div>
               <div>
                 <FaReact />
-                <p>React</p>
+                <Typography component={"span"}>React</Typography>
               </div>
               <div>
                 <SiRedux />
-                <p>Redux</p>
+                <Typography component={"span"}>Redux</Typography>
               </div>
               <div>
                 <SiTypescript />
-                <p>TypeScript</p>
+                <Typography component={"span"}>TypeScript</Typography>
               </div>
             </div>
           </div>
@@ -94,19 +95,19 @@ export function Skills() {
               <div className="div-skills--grid">
                 <div>
                   <FaNodeJs />
-                  <p>NodeJS</p>
+                  <Typography component={"span"}>NodeJS</Typography>
                 </div>
                 <div>
                   <SiMongodb />
-                  <p>MongoDB</p>
+                  <Typography component={"span"}>MongoDB</Typography>
                 </div>
                 <div>
                   <SiExpress />
-                  <p>Express</p>
+                  <Typography component={"span"}>Express</Typography>
                 </div>
                 <div>
                   <SiFirebase />
-                  <p>Firebase</p>
+                  <Typography component={"span"}>Firebase</Typography>
                 </div>
               </div>
             </div>
@@ -115,27 +116,27 @@ export function Skills() {
               <div className="div-skills--grid">
                 <div>
                   <DiScrum />
-                  <p>SCRUM</p>
+                  <Typography component={"span"}>SCRUM</Typography>
                 </div>
                 <div>
                   <FaFigma />
-                  <p>Figma</p>
+                  <Typography component={"span"}>Figma</Typography>
                 </div>
                 <div>
                   <SiMiro />
-                  <p>Miro</p>
+                  <Typography component={"span"}>Miro</Typography>
                 </div>
                 <div>
                   <SiJest />
-                  <p>Jest</p>
+                  <Typography component={"span"}>Jest</Typography>
                 </div>
                 <div>
                   <SiPostman />
-                  <p>Postman</p>
+                  <Typography component={"span"}>Postman</Typography>
                 </div>
                 <div>
                   <FaGitAlt />
-                  <p>Git</p>
+                  <Typography component={"span"}>Git</Typography>
                 </div>
               </div>
             </div>

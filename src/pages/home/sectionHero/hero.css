@@ -13,7 +13,6 @@
   height: 100%;
   position: relative;
   border-radius: 9%;
-  padding: 2rem;
 }
 
 /*************************************/
@@ -140,7 +139,7 @@ span:nth-child(7) {
   font-size: 1.2em;
   font-weight: 700;
   font-family: inherit;
-  color: #213547;
+  color: #294f86;
   background-color: #bbd6fb;
   cursor: pointer;
   transition: border-color 0.25s;

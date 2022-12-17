@@ -1,0 +1,106 @@
+/*************************************/
+/* CTA SECTION */
+/*************************************/
+
+.section-cta {
+  padding: 2rem;
+  margin-bottom: 4rem;
+  height: 100vh;
+}
+
+.div-cta > h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.div-cta {
+  margin-bottom: 4rem;
+}
+
+.cta-form {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cta-form input,
+textarea {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  resize: none;
+  background-color: #f6f1ef;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #a7c8f7;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.button-69 {
+  background-color: initial;
+  background-image: linear-gradient(#a7c8f7 0, #bbd6fb 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
+  color: #294f86;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 3.5rem;
+  outline: 0;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 50%;
+}
+
+.button-69:hover {
+  background-color: #e0e4e9;
+  border-color: #646cff;
+  transition-timing-function: ease-in-out;
+  transition: background-color 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-69 {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import { Hero } from "./sectionHero/Hero";
-import { Projects } from "./sectionProjects/Projects";
 import { Skills } from "./sectionSkills/Skills";
+import { Projects } from "./sectionProjects/Projects";
+import Contact from "./sectionContact/Contact";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   );
 }

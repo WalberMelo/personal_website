@@ -65,14 +65,6 @@ html {
   min-height: 100%;
 }
 
-.full-screen-div {
-  width: 100vw;
-  height: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 a:link,
 a:active,
 a:hover {
@@ -81,6 +73,6 @@ a:hover {
 }
 
 main {
-  margin-left: 8em;
+  margin-left: 6em;
   margin-right: 6em;
 }
