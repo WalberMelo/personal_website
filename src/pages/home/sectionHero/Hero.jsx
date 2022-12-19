@@ -47,21 +47,30 @@ export function Hero() {
         </div>
 
         <div className="hero-social--box">
-          <GitHubIcon sx={{ fontSize: 40 }} className="github" />
-          <LinkedInIcon
-            sx={{ fontSize: 45, color: "#006ca9" }}
-            className="linkedin"
-          />
-          <EmailIcon
-            sx={{
-              fontSize: 40,
-              color: "#bbd6fb",
-              border: "2px solid #9ec2f5;",
-              borderRadius: "50%",
-              p: "2px",
-            }}
-            className="email"
-          />
+          <a href="https://github.com/WalberMelo" target="_blank">
+            <GitHubIcon sx={{ fontSize: 40 }} className="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/walberdemelo/" target="_blank">
+            <LinkedInIcon
+              sx={{ fontSize: 45, color: "#006ca9" }}
+              className="linkedin"
+            />
+          </a>
+          <a
+            href="mailto:dev4wm@gmail.com
+    "
+          >
+            <EmailIcon
+              sx={{
+                fontSize: 40,
+                color: "#bbd6fb",
+                border: "2px solid #9ec2f5;",
+                borderRadius: "50%",
+                p: "2px",
+              }}
+              className="email"
+            />
+          </a>
         </div>
 
         <div className="hero-img--box">

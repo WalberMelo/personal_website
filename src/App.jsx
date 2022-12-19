@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/footer";
 import Home from "./pages/home/Home";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
@@ -36,6 +37,7 @@ function MyApp() {
       </IconButton>
       <Header />
       <Home />
+      <Footer theme={theme} />
     </Box>
   );
 }

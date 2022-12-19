@@ -41,30 +41,3 @@ function Header() {
 }
 
 export default Header;
-
-{
-  /* <nav>
-          <ul className="main-nav-list">
-            <li>
-              <a className="main-nav-link" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-link" href="#about">
-                About me
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-link" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-link nav-skills" href="#skills">
-                Skills
-              </a>
-            </li>
-          </ul>
-        </nav> */
-}

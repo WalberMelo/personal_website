@@ -67,12 +67,18 @@ function Contact() {
                 placeholder="Leave your message"
                 onChange={(e) => setCharacterCount(e.target.value.length)}
               ></textarea>
-              <Typography sx={{ display: "flex", justifyContent: "flex-end" }}>
+              <Typography
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  color: "inherit",
+                }}
+              >
                 {characterCount}/300
               </Typography>
             </div>
-            <button class="button-69" role="button">
-              Submit
+            <button className="btn-send" role="button">
+              Send
             </button>
           </form>
         </div>
