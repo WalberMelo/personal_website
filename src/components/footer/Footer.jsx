@@ -9,7 +9,6 @@ import EmailIcon from "@mui/icons-material/Email";
 
 function Footer({ theme }) {
   const { mode } = theme.palette;
-  console.log(mode);
 
   let year = new Date();
   let currentYear = year.getFullYear();
@@ -28,9 +27,9 @@ function Footer({ theme }) {
       <footer className="footer">
         <div className="footer-logo">
           {logoImage()}
-          <p class="copyright">
-            Copyright &copy; <span class="year">{currentYear}</span> by Walber
-            Melo
+          <p className="copyright">
+            Copyright &copy; <span className="year">{currentYear}</span> by
+            Walber Melo
           </p>
         </div>
         <div className="footer-social-links">

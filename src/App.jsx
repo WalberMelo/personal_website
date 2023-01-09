@@ -1,8 +1,18 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+/* Components */
+import Logo from "./components/logo/Logo";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/footer";
+import ScrollToTop from "./components/scroll/ScrollToTop";
+
+/* Pages */
 import Home from "./pages/home/Home";
+import Melody from "./pages/project/melody/Melody";
+
+/* Material UI */
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
@@ -24,20 +34,48 @@ function MyApp() {
         borderRadius: 1,
       }}
     >
-      <IconButton
-        sx={{ mt: 1, position: "absolute", right: "2%", zIndex: "1000" }}
-        onClick={colorMode.toggleColorMode}
-        color="inherit"
-      >
-        {theme.palette.mode === "dark" ? (
-          <WbSunnyOutlinedIcon />
-        ) : (
-          <DarkModeIcon />
-        )}
-      </IconButton>
-      <Header />
-      <Home />
-      <Footer theme={theme} />
+      <Router>
+        <ScrollToTop>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <IconButton
+                    sx={{
+                      mt: 1,
+                      position: "absolute",
+                      right: "2%",
+                      zIndex: "1000",
+                    }}
+                    onClick={colorMode.toggleColorMode}
+                    color="inherit"
+                  >
+                    {theme.palette.mode === "dark" ? (
+                      <WbSunnyOutlinedIcon />
+                    ) : (
+                      <DarkModeIcon />
+                    )}
+                  </IconButton>
+                  <Header />
+                  <Home />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-melody"
+              element={
+                <>
+                  <Logo />
+                  <Melody theme={theme} />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+          </Routes>
+        </ScrollToTop>
+      </Router>
     </Box>
   );
 }

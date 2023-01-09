@@ -1,0 +1,133 @@
+/***** General  ******/
+.title {
+  margin-bottom: 6rem;
+}
+
+.sub-title {
+  margin-bottom: 2rem;
+}
+
+/***** Section Introduction  ******/
+
+.introduction {
+  margin-bottom: 8rem;
+}
+
+.summary {
+  margin-bottom: 4rem;
+}
+.summary > h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.projects-logo {
+  width: 15%;
+}
+
+.list_of_features {
+  display: grid;
+  grid-template-columns: 6fr 2fr 1fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+.ul-features {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.ul-stack {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img--border {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/***** Section purpose and goal  ******/
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 4rem;
+}
+
+.design-figma {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.figma-img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+/***** Section web stack technology  ******/
+
+.web_stack_technology {
+  grid-column: 2;
+  grid-row: 2 / 3;
+  margin-top: 2rem;
+}
+
+.stack-icons {
+  display: grid;
+  justify-items: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.stack-icon {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  padding: 0.4rem 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 3px;
+}
+
+/***** Section Problems_and_thought  ******/
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.Problems_and_thought {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.Problems_and_thought_img {
+  width: 70%;
+}
+
+/***** Section Problems_and_thought  ******/
+
+.Lessons_Learned {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}

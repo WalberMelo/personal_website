@@ -1,0 +1,8 @@
+.logoPages {
+  width: 10%;
+  border-bottom-right-radius: 100%;
+  filter: brightness(90%);
+}
+.logoPages:hover {
+  cursor: pointer;
+}
