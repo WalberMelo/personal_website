@@ -23,7 +23,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   column-gap: 8rem;
-  row-gap: 2rem;
+  row-gap: 4rem;
 }
 
 .div-projects--details {
@@ -36,10 +36,11 @@
   margin-bottom: 2rem;
 }
 
-.melody-project-border {
-  border: 3rem solid antiquewhite;
-  border-top: 1.2rem solid antiquewhite;
-  border-bottom: 1.2rem solid antiquewhite;
+.project-border {
+  border: 3rem solid #f3f3f3;
+  border-top: 1.2rem solid rgb(243, 243, 243);
+  border-bottom: 1.2rem solid rgb(243, 243, 243);
+  border-radius: 4px;
 }
 
 .quizzical-img {

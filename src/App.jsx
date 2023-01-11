@@ -12,6 +12,7 @@ import ScrollToTop from "./components/scroll/ScrollToTop";
 import Home from "./pages/home/Home";
 import Melody from "./pages/project/melody/Melody";
 import Quizz from "./pages/project/quizz/Quizz";
+import Getfood from "./pages/project/getfood/Getfood";
 
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
@@ -80,6 +81,16 @@ function MyApp() {
                 <>
                   <Logo />
                   <Quizz theme={theme} />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-getfood"
+              element={
+                <>
+                  <Logo />
+                  <Getfood theme={theme} />
                   <Footer theme={theme} />
                 </>
               }

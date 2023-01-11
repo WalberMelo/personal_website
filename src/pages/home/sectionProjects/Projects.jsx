@@ -24,7 +24,7 @@ export function Projects() {
           <img
             src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
             alt="project"
-            className="melody-project-border"
+            className="project-border"
           />
           <h2>Melody Music</h2>
           <Typography>
@@ -71,7 +71,7 @@ export function Projects() {
         </div>
         <div className="div-projects--details">
           <img src={melodyPhoto} alt="projects" className="img-projects" />
-          <h2>Weather Forecast</h2>
+          <h2>Quizz</h2>
           <Typography>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo
             autem nihil ipsa, distinctio commodi minima officia dolorem
@@ -84,15 +84,19 @@ export function Projects() {
           </div>
         </div>
         <div className="div-projects--details">
-          <img src={melodyPhoto} alt="projects" className="img-projects" />
-          <h2>Quizz</h2>
+          <img
+            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"
+            alt="projects"
+            className="project-border"
+          />
+          <h2>GetFood</h2>
           <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo
-            autem nihil ipsa, distinctio commodi minima officia dolorem
-            expedita, animi ad sapiente aspernatur, modi blanditiis quia
-            nesciunt quo numquam accusantium
+            GetFood is a beautiful landing page that guide the customer to order
+            healthy food offering a vast range of menus for all kinds of
+            taste.The page was built using basic web development technologies,
+            HTML, CSS and basic vanilla Javascript.
           </Typography>
-          <div>
+          <div onClick={() => navigate("/project-getfood")}>
             <Typography sx={{ fontWeight: "600" }}>View project</Typography>
             <ChevronRightIcon />
           </div>
