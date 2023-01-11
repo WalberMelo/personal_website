@@ -25,7 +25,6 @@ import {
   SiJest,
   SiPostman,
   SiExpress,
-  SiSwagger,
 } from "react-icons/si";
 
 export function Skills() {

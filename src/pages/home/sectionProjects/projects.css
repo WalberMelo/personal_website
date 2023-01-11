@@ -30,13 +30,31 @@
   display: flex;
   flex-direction: column;
 }
+
 .div-projects--details > img {
   width: 100%;
-  height: 90%;
   margin-bottom: 2rem;
+}
+
+.melody-project-border {
   border: 3rem solid antiquewhite;
-  border-top: 1.5rem solid antiquewhite;
-  border-bottom: 1.5rem solid antiquewhite;
+  border-top: 1.2rem solid antiquewhite;
+  border-bottom: 1.2rem solid antiquewhite;
+}
+
+.quizzical-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.div-projects--details div {
+  display: flex;
+  cursor: pointer;
+}
+
+.div-projects--details div:hover {
+  color: #979393;
 }
 
 .div-projects--details > h2 {
@@ -48,15 +66,5 @@
 }
 
 .view_project:hover {
-  color: #979393;
-}
-
-.div-projects--details div {
-  display: flex;
-  cursor: pointer;
-  margin-bottom: 4rem;
-}
-
-.div-projects--details div:hover {
   color: #979393;
 }

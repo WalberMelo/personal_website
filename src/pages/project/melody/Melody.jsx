@@ -3,9 +3,7 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import melody from "../../../assets/projects/melody.png";
 import { FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
-
 import { SiMongodb, SiExpress } from "react-icons/si";
 
 function Melody({ theme }) {

@@ -17,7 +17,6 @@ function srcset(image, size, rows = 1, cols = 1) {
 function Contact() {
   const [characterCount, setCharacterCount] = useState(0);
 
-  const countCommentsLetter = () => {};
   return (
     <section className="section-cta">
       <div className="div-cta">
