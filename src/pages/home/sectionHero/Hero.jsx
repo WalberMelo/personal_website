@@ -1,5 +1,6 @@
-import "./hero.css";
 import React from "react";
+import "./hero.css";
+import { useNavigate } from "react-router-dom";
 
 //Components
 import foto from "../../../assets/hero/man.jpeg";
@@ -12,8 +13,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
 export function Hero() {
+  const navigate = useNavigate();
+
   return (
-    <section className="section-hero" id="hero">
+    <section className="section-hero" id="scrollToTop">
       <div className="hero">
         <div className="hero-text--box">
           <div className="hero-text--greetings fadeIn">
@@ -42,7 +45,9 @@ export function Hero() {
             </p>
           </div>
           <span>
-            <button className="btn-hero">View My Portfolio</button>
+            <button onClick={() => navigate("/projects")} className="btn-hero">
+              View My Portfolio
+            </button>
           </span>
         </div>
 

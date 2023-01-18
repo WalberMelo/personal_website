@@ -1,0 +1,31 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.about-page > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-page > h1 {
+  font-family: "Lato", "Arial", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.about-page > div > p {
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 30%;
+  clip-path: circle();
+}
+
+.signature {
+  margin-bottom: 1rem;
+}

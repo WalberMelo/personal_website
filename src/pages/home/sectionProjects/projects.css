@@ -2,6 +2,10 @@
 /* SECTION PROJECTS */
 /*************************************/
 
+.projects__page {
+  margin-top: 6rem;
+}
+
 .section-projects {
   display: flex;
   flex-direction: column;
@@ -34,12 +38,13 @@
 .div-projects--details > img {
   width: 100%;
   margin-bottom: 2rem;
+  border-radius: 4px;
 }
 
 .project-border {
   border: 3rem solid #f3f3f3;
-  border-top: 1.2rem solid rgb(243, 243, 243);
-  border-bottom: 1.2rem solid rgb(243, 243, 243);
+  border-top: 2rem solid rgb(243, 243, 243);
+  border-bottom: 2rem solid rgb(243, 243, 243);
   border-radius: 4px;
 }
 

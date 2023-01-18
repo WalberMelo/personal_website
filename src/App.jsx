@@ -3,16 +3,19 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 /* Components */
-import Logo from "./components/logo/Logo";
 import Header from "./components/header/Header";
+import HeaderPages from "./components/header/HeaderPages";
 import Footer from "./components/footer/footer";
 import ScrollToTop from "./components/scroll/ScrollToTop";
 
 /* Pages */
 import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import { Allprojects } from "./pages/project/Allprojects/Allprojects";
 import Melody from "./pages/project/melody/Melody";
 import Quizz from "./pages/project/quizz/Quizz";
 import Getfood from "./pages/project/getfood/Getfood";
+import Cooker from "./pages/project/cooker/Cooker";
 
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
@@ -59,8 +62,28 @@ function MyApp() {
                       <DarkModeIcon />
                     )}
                   </IconButton>
-                  <Header />
+                  <Header theme={theme} />
                   <Home />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <>
+                  <HeaderPages theme={theme} />
+                  <About theme={theme} />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <>
+                  <HeaderPages theme={theme} />
+                  <Allprojects theme={theme} />
                   <Footer theme={theme} />
                 </>
               }
@@ -69,7 +92,7 @@ function MyApp() {
               path="/project-melody"
               element={
                 <>
-                  <Logo />
+                  <HeaderPages theme={theme} />
                   <Melody theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -79,7 +102,7 @@ function MyApp() {
               path="/project-quizz"
               element={
                 <>
-                  <Logo />
+                  <HeaderPages theme={theme} />
                   <Quizz theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -89,8 +112,18 @@ function MyApp() {
               path="/project-getfood"
               element={
                 <>
-                  <Logo />
+                  <HeaderPages theme={theme} />
                   <Getfood theme={theme} />
+                  <Footer theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-cooker"
+              element={
+                <>
+                  <HeaderPages theme={theme} />
+                  <Cooker theme={theme} />
                   <Footer theme={theme} />
                 </>
               }

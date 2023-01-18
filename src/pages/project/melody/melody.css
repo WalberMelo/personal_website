@@ -1,4 +1,5 @@
 /***** General  ******/
+
 .title {
   margin-bottom: 6rem;
 }
@@ -52,6 +53,7 @@
 }
 
 .img--border {
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -77,6 +79,14 @@
 
 .getfood_design {
   width: 50%;
+}
+
+.cooker_design {
+  width: 100%;
+  border: 2rem solid #f3f3f3;
+  border-top: 1.2rem solid rgb(243, 243, 243);
+  border-bottom: 1.2rem solid rgb(243, 243, 243);
+  border-radius: 4px;
 }
 
 /***** Section web stack technology  ******/

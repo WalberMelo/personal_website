@@ -34,9 +34,12 @@ export function Skills() {
       <div className="div-skills--title">
         <h1>My Skills</h1>
         <Typography component={"span"}>
-          Through my studies, projects and work experience, I’ve gained a solid
-          foundation of web development concepts, and have dedicated a lot of my
-          time to apply these concepts to real-world scenario and applications.
+          As a web developer, I have gained a wide range of skills through my
+          studies, projects, and work experience. I have learned the
+          fundamentals of web development, including HTML, CSS, JavaScript, and
+          various web development frameworks such as React, Redux. I have also
+          gained experience with backend technologies such as Node.js, Express
+          and MongoDB.
         </Typography>
       </div>
       <div className="div-skills--stacks">

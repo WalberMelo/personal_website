@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 import logoDark from "../../assets/logo/logo_dark.png";
 import logoLight from "../../assets/logo/logo_light.png";
 //Material UI //

@@ -9,6 +9,7 @@
   align-items: center;
   justify-items: center;
   position: relative;
+  margin-bottom: 6rem;
 }
 /*************************************/
 /* LOGO */
@@ -77,7 +78,6 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #a7c8f7;
   text-decoration: none;
 }
 

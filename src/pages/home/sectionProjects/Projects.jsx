@@ -1,7 +1,6 @@
 import "./projects.css";
 import React from "react";
 import { Box } from "@mui/material";
-import melodyPhoto from "../../../assets/projects/app.jpeg";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
@@ -12,11 +11,13 @@ export function Projects() {
   return (
     <section className="section-projects" id="projects">
       <div className="div-projects">
-        <h1>What I've been working on</h1>
+        <h1>Projects that I've been working on</h1>
         <p>
-          I like to stay busy and always have a project in the work. Take a look
-          at some of the applications, articles, and companies I’ve dedicated my
-          time to.
+          I have completed several projects that have allowed me to apply my
+          knowledge and further develop my skills. For example, I have built a
+          web application using React, Node.js and MongoDB, where I implemented
+          features such as user authentication and real-time data management.
+          Take a look in some of projects that I've been working on.
         </p>
       </div>
       <div className="grid-projects">
@@ -40,7 +41,7 @@ export function Projects() {
           </div>
         </div>
         <div className="div-projects--details">
-          <Box className="quizz-grid">
+          <Box sx={{ mb: 2 }} className="quizz-grid">
             <Box sx={{ mr: 2 }}>
               <img
                 src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
@@ -59,26 +60,34 @@ export function Projects() {
 
           <h2>Quizzical</h2>
           <Typography>
-            Quizzical app is a funny game that was built with ReactJS which
-            tests your knowledge about nature as a form of entertainment. The
-            users can answer the questions as many times as they need until
-            finding all the correct results in the game.
+            Quizzical is a small and funny quiz game built with ReactJS. The app
+            will tests your knowledge about nature as a form of entertainment.
+            The users can answer 10 different single-choice questions as many
+            times as they need until finding all the correct results in the
+            game.
           </Typography>
-          <div onClick={() => navigate("/project-quizz")}>
+          <Box onClick={() => navigate("/project-quizz")}>
             <Typography sx={{ fontWeight: "600" }}>View project</Typography>
             <ChevronRightIcon />
-          </div>
+          </Box>
         </div>
         <div className="div-projects--details">
-          <img src={melodyPhoto} alt="projects" className="img-projects" />
-          <h2>Quizz</h2>
+          <img
+            src={
+              "https://res.cloudinary.com/dc0yka6eb/image/upload/v1673901205/portofolio/cooker/vh04bav9hqqkifo78yvc.png"
+            }
+            alt="projects"
+            className="cooker-img"
+          />
+
+          <h2>Cooker</h2>
           <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo
-            autem nihil ipsa, distinctio commodi minima officia dolorem
-            expedita, animi ad sapiente aspernatur, modi blanditiis quia
-            nesciunt quo numquam accusantium
+            Cooker is a recipe app that will help you in your next meal. The app
+            allows users to browse thousands of delicious recipes, bookmark
+            their recipes favorites and also upload your own. It was built with
+            HTML, SASS and advanced vanilla Javascript.
           </Typography>
-          <div>
+          <div onClick={() => navigate("/project-cooker")}>
             <Typography sx={{ fontWeight: "600" }}>View project</Typography>
             <ChevronRightIcon />
           </div>
@@ -92,9 +101,9 @@ export function Projects() {
           <h2>GetFood</h2>
           <Typography>
             GetFood is a beautiful landing page that guide the customer to order
-            healthy food offering a vast range of menus for all kinds of
-            taste.The page was built using basic web development technologies,
-            HTML, CSS and basic vanilla Javascript.
+            healthy food offering a vast range of menus for all kinds of taste.
+            The page was built using basic web development technologies, HTML,
+            CSS and basic vanilla Javascript.
           </Typography>
           <div onClick={() => navigate("/project-getfood")}>
             <Typography sx={{ fontWeight: "600" }}>View project</Typography>

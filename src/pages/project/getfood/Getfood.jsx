@@ -74,7 +74,7 @@ function Getfood({ theme }) {
             <ul className="ul-stack">
               <li>HTML</li>
               <li>CSS</li>
-              <li>Java Script</li>
+              <li>JavaScript</li>
             </ul>
           </Box>
         </div>
@@ -86,11 +86,13 @@ function Getfood({ theme }) {
             <Typography sx={{ mb: 3, paddingRight: 2 }}>
               This landing page provides the basic structure of sites, which
               might be enhanced and modified by other technologies. Basically,
-              the stack used makes part of the front end of every web page and
-              application.The responsive layout implement also consist in the
-              standard Mobile-first pattern which have to be apply in every
-              front end approach. In additional, accessibility has been
-              considered increasing the user experience in the page.
+              the stack used makes part of the front-end of every web page and
+              application. The website is fully responsive and compatible with
+              various devices and screen sizes To optimize the website for
+              search engines and improve its overall performance following
+              Mobile-first design which must be apply in every front-end
+              project. In additional, the accessibility has been also considered
+              increasing the user navigation experience in the page.
             </Typography>
           </div>
         </div>
@@ -149,7 +151,10 @@ function Getfood({ theme }) {
           </div>
           <div className="stack-icon">
             <SiJavascript color="#F0DB4F" fontSize={30} />
-            <Typography sx={{ ml: "1rem" }} component={"span"}>
+            <Typography
+              sx={{ color: "#767676", ml: "1rem" }}
+              component={"span"}
+            >
               JavaScript
             </Typography>
           </div>
@@ -183,11 +188,11 @@ function Getfood({ theme }) {
         <div className="Problems_and_thought">
           <h2 className="sub-title">Problems and thought process</h2>
           <Typography sx={{ mb: 3, textAlign: "center" }}>
-            As most of vanilla JavaScript, which does not have any additional
-            libraries, I ran into some problems that would easily be solved by
-            using them. DOM manipulation was extremely necessary in order to
-            create user interactions on the page, and CSS media queries for
-            achieve the responsive mobile design without any extra dependencies.
+            In addition to determining the layout and design of page elements, I
+            tested the page on multiple devices and browsers to ensure
+            compatibility and correct operation by keeping in keep in mind
+            accessibility standards and guidelines to ensure that the page was
+            accessible to users with disabilities.
           </Typography>
         </div>
       </Box>

@@ -22,8 +22,8 @@ function Contact() {
       <div className="div-cta">
         <h1>Let's work together</h1>
         <Typography component={"span"}>
-          Feel free to reach out if you're looking for a developer. have any
-          question, or just want to connect.
+          Let's collaborate and achieve great results together. Feel free to
+          reach out if you're looking for a developer or just want to connect.
         </Typography>
       </div>
       <Box
@@ -39,7 +39,7 @@ function Contact() {
               <label htmlFor="full-name">Full Name</label>
               <input
                 type="text"
-                placeholder="John Smith"
+                placeholder="James Oscar"
                 id="full-name"
                 name="full-name"
                 required
@@ -56,14 +56,13 @@ function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="message">Your comments</label>
+              <label htmlFor="message">Leave your message</label>
               <textarea
                 id="message"
                 name="txtname"
                 rows="4"
                 cols="50"
                 maxLength="300"
-                placeholder="Leave your message"
                 onChange={(e) => setCharacterCount(e.target.value.length)}
               ></textarea>
               <Typography
@@ -107,7 +106,7 @@ function Contact() {
 }
 const itemData = [
   {
-    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1671228184/portofolio/tqygvtcknqwxof77acj7.jpg",
+    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1673995862/portofolio/zgkvikbwqubttrkmnou7.jpg",
     title: "Developer",
     rows: 2,
     cols: 2,
