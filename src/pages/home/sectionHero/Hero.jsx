@@ -1,6 +1,6 @@
 import React from "react";
-import "./hero.css";
 import { useNavigate } from "react-router-dom";
+import "./hero.css";
 
 //Components
 import foto from "../../../assets/hero/man.jpeg";
@@ -17,8 +17,37 @@ export function Hero() {
 
   return (
     <section className="section-hero" id="scrollToTop">
-      <div className="hero">
-        <div className="hero-text--box">
+      <div className="hero__container">
+        <div className="hero__container--img">
+          <div className="hero-img--box">
+            <span>
+              <img src={foto} alt="Walber Melo" />
+            </span>
+          </div>
+          <div className="hero-social--box">
+            <a href="https://github.com/WalberMelo" target="_blank">
+              <GitHubIcon className="github" />
+            </a>
+            <a href="https://www.linkedin.com/in/walberdemelo/" target="_blank">
+              <LinkedInIcon sx={{ color: "#006ca9" }} className="linkedin" />
+            </a>
+            <a
+              href="mailto:dev4wm@gmail.com
+    "
+            >
+              <EmailIcon
+                sx={{
+                  color: "#bbd6fb",
+                  border: "2px solid #9ec2f5;",
+                  borderRadius: "50%",
+                  p: "2px",
+                }}
+                className="email"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="hero__container--text">
           <div className="hero-text--greetings fadeIn">
             <img src={Aspas} className="hero-img--greetings" />
             <div>
@@ -48,39 +77,6 @@ export function Hero() {
             <button onClick={() => navigate("/projects")} className="btn-hero">
               View My Portfolio
             </button>
-          </span>
-        </div>
-
-        <div className="hero-social--box">
-          <a href="https://github.com/WalberMelo" target="_blank">
-            <GitHubIcon sx={{ fontSize: 40 }} className="github" />
-          </a>
-          <a href="https://www.linkedin.com/in/walberdemelo/" target="_blank">
-            <LinkedInIcon
-              sx={{ fontSize: 45, color: "#006ca9" }}
-              className="linkedin"
-            />
-          </a>
-          <a
-            href="mailto:dev4wm@gmail.com
-    "
-          >
-            <EmailIcon
-              sx={{
-                fontSize: 40,
-                color: "#bbd6fb",
-                border: "2px solid #9ec2f5;",
-                borderRadius: "50%",
-                p: "2px",
-              }}
-              className="email"
-            />
-          </a>
-        </div>
-
-        <div className="hero-img--box">
-          <span>
-            <img src={foto} alt="Walber Melo" />
           </span>
         </div>
       </div>

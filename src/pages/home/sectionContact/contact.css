@@ -3,9 +3,9 @@
 /*************************************/
 
 .section-cta {
-  padding: 2rem;
   margin-bottom: 4rem;
   height: 100vh;
+  border-radius: 8px;
 }
 
 .div-cta > h1 {
@@ -18,7 +18,7 @@
 
 .cta-form {
   display: grid;
-  width: 90%;
+  width: 80%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   column-gap: 3.2rem;
@@ -52,6 +52,12 @@ textarea {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 4px #a7c8f7;
+}
+
+.cta__img--grid {
+  max-width: 100%;
+  margin-top: 2em;
+  height: 19em;
 }
 
 .btn {
@@ -90,4 +96,83 @@ textarea {
 .btn-send:focus,
 .btn-send:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/***********************/
+/** RESPONSIVE MOBILE **/
+/***********************/
+
+@media only screen and (max-width: 870px) {
+  .cta-form {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+
+  .btn-send {
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .btn-send {
+    padding: 0.8em 1.2em;
+    font-size: 0.8em;
+  }
+
+  /* CTA container */
+  @media only screen and (max-width: 680px) {
+    #root
+      > div
+      > div
+      > main
+      > section.section-cta
+      > div.MuiBox-root.css-ivrut9 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .section-cta {
+      margin-bottom: 8rem;
+    }
+
+    .cta__img--grid {
+      margin-top: 0;
+    }
+    .div-cta--form {
+      margin-top: 2em;
+    }
+
+    .btn-send {
+      padding: 0.8em 1em;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .section-cta {
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .section-cta {
+    margin-bottom: 12rem;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+  .div-cta > h1 {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section-cta {
+    margin-bottom: 14rem;
+  }
 }

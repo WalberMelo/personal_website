@@ -2,16 +2,12 @@
 /* FOOTER */
 /*************************************/
 
-.section-footer {
-  margin-left: 6em;
-  margin-right: 6em;
-}
 .footer {
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #eee;
+  padding-bottom: 2em;
 }
 
 .logo_footer {
@@ -21,6 +17,12 @@
 .footer-logo {
   display: flex;
   align-items: center;
+}
+
+.github,
+.linkedin,
+.email {
+  font-size: 30px;
 }
 
 .footer-social-links {
@@ -51,4 +53,83 @@ a:visited {
 .footer-link > p:hover {
   transition: all 0.3s;
   color: #9ec2f5;
+}
+
+/** RESPONSIVE MOBILE **/
+@media only screen and (max-width: 866px) {
+  .logo_footer {
+    width: 30%;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .logo_footer {
+    width: 50%;
+  }
+
+  .copyright {
+    font-size: 0.7em;
+  }
+
+  .footer-social-links > a {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .logo_footer {
+    width: 50%;
+  }
+
+  .copyright {
+    font-size: 0.7em;
+  }
+
+  .footer-social-links > a {
+    font-size: 0.8em;
+  }
+
+  .github,
+  .linkedin,
+  .email {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .logo_footer {
+    width: 30%;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-social-links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .footer-social-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 1em;
+    margin-top: 1.6em;
+    font-weight: 400;
+    gap: 0.4em;
+  }
+  .footer-social-links > a {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

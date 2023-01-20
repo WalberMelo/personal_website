@@ -64,8 +64,12 @@ html {
   font-family: "Rubik", sans-serif;
   font-family: "Coming Soon", cursive;
   font-family: "Open Sans", sans-serif;
+  border: 1px solid red;
+
+  max-width: 100%;
   min-width: 320px;
-  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 a:link,
@@ -76,6 +80,32 @@ a:hover {
 }
 
 main {
-  margin-left: 6em;
-  margin-right: 6em;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+/***********************/
+/** RESPONSIVE DESIGN **/
+/***********************/
+
+@media only screen and (max-width: 666px) {
+  main {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+  main {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
 }

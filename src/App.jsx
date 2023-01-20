@@ -3,8 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 /* Components */
-import Header from "./components/header/Header";
-import HeaderPages from "./components/header/HeaderPages";
+import ResponsiveAppBar from "./components/header/ResponsiveAppBar";
+import ResponsiveAppBarPages from "./components/header/ResponsiveAppBarPages";
 import Footer from "./components/footer/footer";
 import ScrollToTop from "./components/scroll/ScrollToTop";
 
@@ -45,14 +45,16 @@ function MyApp() {
             <Route
               path="/"
               element={
-                <>
+                <Box>
                   <IconButton
                     sx={{
                       mt: 1,
+                      top: 30,
                       position: "absolute",
                       right: "2%",
                       zIndex: "1000",
                     }}
+                    className="btn__Color--Mode"
                     onClick={colorMode.toggleColorMode}
                     color="inherit"
                   >
@@ -62,17 +64,16 @@ function MyApp() {
                       <DarkModeIcon />
                     )}
                   </IconButton>
-                  <Header theme={theme} />
-                  <Home />
-                  <Footer theme={theme} />
-                </>
+                  <ResponsiveAppBar theme={theme} />
+                  <Home theme={theme} />
+                </Box>
               }
             />
             <Route
               path="/about"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <About theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -82,7 +83,7 @@ function MyApp() {
               path="/projects"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <Allprojects theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -92,7 +93,7 @@ function MyApp() {
               path="/project-melody"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <Melody theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -102,7 +103,7 @@ function MyApp() {
               path="/project-quizz"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <Quizz theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -112,7 +113,7 @@ function MyApp() {
               path="/project-getfood"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <Getfood theme={theme} />
                   <Footer theme={theme} />
                 </>
@@ -122,7 +123,7 @@ function MyApp() {
               path="/project-cooker"
               element={
                 <>
-                  <HeaderPages theme={theme} />
+                  <ResponsiveAppBarPages theme={theme} />
                   <Cooker theme={theme} />
                   <Footer theme={theme} />
                 </>

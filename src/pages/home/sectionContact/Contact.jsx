@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.css";
+import ContactForm from "./ContactForm";
 import { Box } from "@mui/system";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -15,8 +16,6 @@ function srcset(image, size, rows = 1, cols = 1) {
 }
 
 function Contact() {
-  const [characterCount, setCharacterCount] = useState(0);
-
   return (
     <section className="section-cta">
       <div className="div-cta">
@@ -28,63 +27,16 @@ function Contact() {
       </div>
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
         }}
       >
-        <div className="div-cta--form">
-          <form className="cta-form" name="contact-me" netlify="true">
-            <div>
-              <label htmlFor="full-name">Full Name</label>
-              <input
-                type="text"
-                placeholder="James Oscar"
-                id="full-name"
-                name="full-name"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email address</label>
-              <input
-                type="email"
-                placeholder="me@example.com"
-                id="email"
-                name="email"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="message">Leave your message</label>
-              <textarea
-                id="message"
-                name="txtname"
-                rows="4"
-                cols="50"
-                maxLength="300"
-                onChange={(e) => setCharacterCount(e.target.value.length)}
-              ></textarea>
-              <Typography
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  color: "inherit",
-                }}
-              >
-                {characterCount}/300
-              </Typography>
-            </div>
-            <button className="btn-send" role="button">
-              Send
-            </button>
-          </form>
-        </div>
+        <ContactForm />
         <ImageList
-          sx={{ width: 600, height: 305 }}
           variant="quilted"
           cols={4}
           rowHeight={150}
+          className="cta__img--grid"
         >
           {itemData.map((item) => (
             <ImageListItem

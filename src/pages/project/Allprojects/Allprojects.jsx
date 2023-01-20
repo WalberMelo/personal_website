@@ -1,6 +1,7 @@
 import React from "react";
 import "../../home/sectionProjects/projects.css";
 import { useNavigate } from "react-router-dom";
+import CurrentProject from "../../home/sectionProjects/CurrentProject";
 
 /* Material UI  */
 import { Box } from "@mui/material";
@@ -113,6 +114,7 @@ export function Allprojects() {
           </div>
         </div>
       </section>
+      <CurrentProject />
     </main>
   );
 }

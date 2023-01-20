@@ -6,12 +6,11 @@
   height: 95vh;
   margin-bottom: 6em;
 }
-.hero {
+.hero__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   height: 100%;
-  position: relative;
   border-radius: 9%;
 }
 
@@ -19,77 +18,14 @@
 /* TEXT BOX */
 /*************************************/
 
-.hero-text--box {
+.hero__container--text {
   margin-top: 8em;
   line-height: 3em;
   letter-spacing: 2px;
   position: relative;
-  border-radius: 50%;
   border: 50% rgba(245, 245, 220, 0.399);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-
-/* Effect "Fade in" START */
-.fadeIn {
-  animation: fade 3s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes scale {
-  100% {
-    transform: scale(1);
-  }
-}
-
-span {
-  display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
-}
-
-span:nth-child(1) {
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(2) {
-  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(3) {
-  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(4) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(5) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(6) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(7) {
-  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-/* Fade in End */
 
 .hero-text--greetings {
   display: flex;
@@ -158,43 +94,44 @@ span:nth-child(7) {
 /* IMAGE BOX */
 /*************************************/
 
-.hero-img--box {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  bottom: 0;
-  z-index: 1;
+.hero__container--img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-
 .hero-img--box > span > img {
   width: 90%;
   border: 0.6em solid;
   border-radius: 50%;
   filter: opacity(80%);
+  margin-top: 8em;
 }
 .idea-icon {
   position: absolute;
   top: 10%;
   left: 75%;
 }
-.idea-icon > img {
-  width: 70%;
-}
 
 /*************************************/
 /* SOCIAL MEDIA BOX */
 /*************************************/
 .hero-social--box {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 1.4em;
-  align-items: end;
-  margin-bottom: 2em;
+  display: block;
+  justify-content: space-evenly;
+  margin-bottom: 8em;
   z-index: 10;
 }
 
 .hero-social--box:hover {
   cursor: pointer;
+}
+.hero-social--box > a {
+  margin-left: 2em;
+}
+
+#scrollToTop > div > div.hero__container--img > div.hero-social--box > a > svg {
+  font-size: 40px;
 }
 
 /* Animation left to right START */
@@ -246,3 +183,219 @@ span:nth-child(7) {
 }
 
 /* Animation left to right END */
+
+/* Effect "Fade in" START */
+.fadeIn {
+  animation: fade 3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Fade in End */
+
+/***********************/
+/** RESPONSIVE DESIGN **/
+/***********************/
+
+/** HERO **/
+@media only screen and (max-width: 870px) {
+  .hero-text--greetings {
+    display: flex;
+    margin-top: 0em;
+    margin-left: 3em;
+    font-size: 1.6em;
+  }
+
+  .hero-text--name {
+    font-size: 1.8em;
+    margin-bottom: 0;
+  }
+
+  .hero-name-dev,
+  .hero-text--job {
+    font-size: 2em;
+  }
+
+  .btn-hero {
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+  }
+
+  /* Image container */
+
+  .hero-img--box > span > img {
+    width: 80%;
+    border: 0.6em solid;
+    margin-top: 15em;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .section-hero {
+    margin-bottom: 0em;
+  }
+  .hero__container {
+    display: block;
+    height: 100%;
+    border-radius: 9%;
+    position: relative;
+  }
+
+  /* TEXT */
+  .hero__container--text {
+    order: -1;
+    margin-top: 0em;
+  }
+
+  .hero-text--greetings {
+    display: flex;
+    margin-top: 0em;
+    margin-left: 3em;
+    font-size: 1.4em;
+  }
+
+  .hero-text--name {
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+
+  .hero-name-dev,
+  .hero-text--job {
+    font-size: 1.8em;
+  }
+
+  /* IMAGE */
+
+  .hero-img--box {
+    padding-left: 6em;
+  }
+
+  .hero-img--box > span > img {
+    width: 80%;
+    border: 0.6em solid;
+    margin-top: 0em;
+    margin-bottom: 2em;
+  }
+
+  /* social buttons */
+  .hero-social--box {
+    margin-bottom: 2em;
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Buttons */
+
+  .btn-hero {
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  /* social buttons */
+  .hero-social--box {
+    margin-bottom: 2em;
+    position: absolute;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  /* social buttons */
+  .hero-social--box {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  /* social buttons */
+  .hero-social--box {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  /* social buttons */
+  .hero-social--box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* social buttons */
+  .github,
+  .linkedin,
+  .email {
+    font-size: 10px;
+  }
+
+  .hero-img--box > span > img {
+    width: 80%;
+    border: 0.5em solid;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+
+  .hero-img--box {
+    padding-left: 4em;
+  }
+}

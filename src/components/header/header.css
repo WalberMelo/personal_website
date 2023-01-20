@@ -15,15 +15,18 @@
 /* LOGO */
 /*************************************/
 
-.logo {
+/* .logo {
   position: absolute;
   top: -40%;
   left: -3%;
-  width: 200px;
+  width: 190px;
   border-bottom-right-radius: 100%;
   filter: brightness(90%);
+} */
+.logo {
+  width: 10%;
+  border-radius: 50px 50% 500cm;
 }
-
 .fadeIn {
   animation: fade 5s;
 }
@@ -40,30 +43,36 @@
 /*************************************/
 /* NAVIGATION */
 /*************************************/
-
-.header-main-nav {
-  margin-top: 1em;
-  margin-left: 10em;
-  margin-right: 10em;
+/* Hidden border right from navbar  */
+#root
+  > div
+  > div
+  > header
+  > div
+  > div
+  > div
+  > div.MuiBox-root.css-1t6c9ts
+  > button:nth-child(4) {
+  border-right: none;
 }
 
-.main-nav-list {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  gap: 2.5rem;
+#root
+  > div
+  > header
+  > div
+  > div
+  > div
+  > div.MuiBox-root.css-1t6c9ts
+  > button:nth-child(3) {
+  border-right: none;
 }
 
 .main-nav-link {
   padding-top: 0.4rem;
-  padding-right: 2.5em;
   border-right: 1px solid;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2rem;
-}
-.nav-skills {
-  border: none;
 }
 
 .main-nav-link:link,
@@ -72,7 +81,6 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  font-size: 1.2rem;
   transition: all 0.3s;
 }
 
@@ -102,4 +110,75 @@
 .header-theme--sun {
   margin-top: 1.2em;
   margin-left: 4em;
+}
+
+/***********************/
+/** RESPONSIVE DESIGN **/
+/***********************/
+
+/** HEADER **/
+@media only screen and (max-width: 837px) {
+  /* NAVIGATION */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+
+  .btn__open--Nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .btn__mobile {
+    display: flex;
+  }
+
+  .hidden-nav {
+    visibility: hidden;
+  }
+
+  .header-main-nav {
+    margin: 0;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    gap: 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .main-nav-link {
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    top: -20%;
+    left: -10%;
+    width: 20%;
+  }
+
+  /* NAVIGATION */
+
+  .header-main-nav {
+    margin-left: 10em;
+    margin-right: 10em;
+    width: 60%;
+  }
+
+  .main-nav-link {
+    width: 120px;
+    padding-top: 0.4rem;
+    font-size: 1.6rem;
+  }
 }

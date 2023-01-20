@@ -13,14 +13,14 @@
   margin-bottom: 1em;
 }
 
-.div-skills--title {
+.skills--title {
   margin-bottom: 3em;
 }
 
-.div-skills--stacks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.stacks__skills--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .stacks {
@@ -29,20 +29,102 @@
   margin-bottom: 3rem;
 }
 
+.stacks-frontend {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 .stacks-backend {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  margin-top: 1rem;
+  grid-row: 2;
 }
-.div-skills--grid {
-  display: flex;
+.stacks-tools {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 4rem;
 }
 
-.div-skills--grid > div {
+.skills--grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills--grid > div {
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
   margin-top: 1em;
-  margin-right: 1.8em;
+  margin-right: 1em;
+}
+
+/***********************/
+/** RESPONSIVE DESIGN **/
+/***********************/
+
+@media only screen and (max-width: 870px) {
+  .stacks__skills--container {
+    font-size: 0.8em;
+  }
+
+  #skills
+    > div.stacks__skills--container
+    > div.stacks-frontend
+    > div
+    > div
+    > div
+    > span {
+    font-size: 0.9em;
+  }
+
+  #skills
+    > div.stacks__skills--container
+    > div.stacks-backend
+    > div
+    > div
+    > div
+    > span {
+    font-size: 0.9em;
+  }
+
+  #skills
+    > div.stacks__skills--container
+    > div.stacks-tools
+    > div
+    > div
+    > div
+    > span {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .stacks__skills--container {
+    font-size: 0.7em;
+  }
+
+  @media only screen and (max-width: 556px) {
+    .stacks__skills--container {
+      font-size: 0.6em;
+    }
+  }
+
+  /* Change stacks icons to Grid vertical */
+  @media only screen and (max-width: 500px) {
+    .stacks__skills--container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .skills--grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .stacks__skills--container {
+      font-size: 0.7em;
+    }
+  }
 }

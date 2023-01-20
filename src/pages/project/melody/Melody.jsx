@@ -45,7 +45,12 @@ function Melody({ theme }) {
                 mb: 2,
               }}
             >
-              <Link href="#" underline="none">
+              <Link
+                href="https://melody-music-stream-front.vercel.app/"
+                underline="none"
+                target="_blank"
+                rel="noopener"
+              >
                 <b>View site</b>
               </Link>
             </Box>

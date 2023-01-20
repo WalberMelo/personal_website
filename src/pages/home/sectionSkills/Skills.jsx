@@ -30,8 +30,7 @@ import {
 export function Skills() {
   return (
     <section className="section-skills" id="skills">
-      <div className="section-border--line"></div>
-      <div className="div-skills--title">
+      <div className="skills--title">
         <h1>My Skills</h1>
         <Typography component={"span"}>
           As a web developer, I have gained a wide range of skills through my
@@ -42,59 +41,63 @@ export function Skills() {
           and MongoDB.
         </Typography>
       </div>
-      <div className="div-skills--stacks">
+      <div className="stacks__skills--container">
         <IconContext.Provider
           value={{ size: "2em", className: "global-class-name" }}
         >
-          <div className="stacks">
-            <h4>FRONTEND</h4>
-            <div className="div-skills--grid">
-              <div>
-                <FaHtml5 />
-                <Typography component={"span"}>HTML5</Typography>
-              </div>
-              <div>
-                <FaCss3 />
-                <Typography component={"span"}>CSS3</Typography>
-              </div>
-              <div>
-                <FaSass />
-                <Typography component={"span"}>SASS</Typography>
-              </div>
-              <div>
-                <FaBootstrap />
-                <Typography component={"span"}>Bootstrap</Typography>
-              </div>
-              <div>
-                <SiStyledcomponents />
-                <Typography component={"span"}>Styled Component</Typography>
-              </div>
-              <div>
-                <SiMaterialui />
-                <Typography component={"span"}>Material UI</Typography>
-              </div>
-              <div>
-                <SiJavascript />
-                <Typography component={"span"}>JavaScript</Typography>
-              </div>
-              <div>
-                <FaReact />
-                <Typography component={"span"}>React</Typography>
-              </div>
-              <div>
-                <SiRedux />
-                <Typography component={"span"}>Redux</Typography>
-              </div>
-              <div>
-                <SiTypescript />
-                <Typography component={"span"}>TypeScript</Typography>
+          <div className="stacks-frontend">
+            <div className="stacks">
+              <h4>FRONTEND</h4>
+              <div className="skills--grid">
+                <div>
+                  <FaHtml5 />
+                  <Typography component={"span"}>HTML5</Typography>
+                </div>
+                <div>
+                  <FaCss3 />
+                  <Typography component={"span"}>CSS3</Typography>
+                </div>
+                <div>
+                  <FaSass />
+                  <Typography component={"span"}>SASS</Typography>
+                </div>
+                <div>
+                  <FaBootstrap />
+                  <Typography component={"span"}>Bootstrap</Typography>
+                </div>
+                <div>
+                  <SiStyledcomponents />
+                  <Typography sx={{ textAlign: "center" }} component={"span"}>
+                    Styled Component
+                  </Typography>
+                </div>
+                <div>
+                  <SiMaterialui />
+                  <Typography component={"span"}>MaterialUI</Typography>
+                </div>
+                <div>
+                  <SiJavascript />
+                  <Typography component={"span"}>JavaScript</Typography>
+                </div>
+                <div>
+                  <FaReact />
+                  <Typography component={"span"}>React</Typography>
+                </div>
+                <div>
+                  <SiRedux />
+                  <Typography component={"span"}>Redux</Typography>
+                </div>
+                <div>
+                  <SiTypescript />
+                  <Typography component={"span"}>TypeScript</Typography>
+                </div>
               </div>
             </div>
           </div>
-          <div className="stacks-backend">
+          <div className="stacks-backend ">
             <div className="stacks">
               <h4>BACKEND</h4>
-              <div className="div-skills--grid">
+              <div className="skills--grid">
                 <div>
                   <FaNodeJs />
                   <Typography component={"span"}>NodeJS</Typography>
@@ -113,12 +116,14 @@ export function Skills() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="stacks-tools ">
             <div className="stacks">
               <h4>TOOLS</h4>
-              <div className="div-skills--grid">
+              <div className="skills--grid">
                 <div>
                   <DiScrum />
-                  <Typography component={"span"}>SCRUM</Typography>
+                  <Typography component={"span"}>Scrum</Typography>
                 </div>
                 <div>
                   <FaFigma />
