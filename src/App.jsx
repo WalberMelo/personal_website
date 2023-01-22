@@ -75,7 +75,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <About theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />
@@ -85,7 +84,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Allprojects theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />
@@ -95,7 +93,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Melody theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />
@@ -105,7 +102,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Quizz theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />
@@ -115,7 +111,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Getfood theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />
@@ -125,7 +120,6 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Cooker theme={theme} />
-                  <Footer theme={theme} />
                 </>
               }
             />

@@ -398,4 +398,64 @@ span:nth-child(7) {
   .hero-img--box {
     padding-left: 4em;
   }
+
+  /* TEXT */
+
+  .hero-text--greetings {
+    display: flex;
+    margin-top: 0em;
+    margin-left: 3em;
+    font-size: 1.2em;
+  }
+
+  .hero-text--greetings.fadeIn > div > div > span {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  .hero-text--name {
+    font-size: 1.4em;
+    margin-bottom: 0;
+  }
+
+  .hero-name-dev,
+  .hero-text--job {
+    font-size: 1.6em;
+  }
+
+  .btn-hero {
+    padding: 0.8em 1.2em;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  /* TEXT */
+
+  .hero-text--greetings {
+    display: flex;
+    margin-top: 0em;
+    margin-left: 3em;
+    font-size: 1.2em;
+  }
+
+  .hero-text--greetings.fadeIn > div > div > span {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  .hero-text--name {
+    font-size: 1.4em;
+    margin-bottom: 0;
+  }
+
+  .hero-name-dev,
+  .hero-text--job {
+    font-size: 1.6em;
+  }
+
+  .btn-hero {
+    padding: 0.8em 1.2em;
+    font-size: 0.8em;
+  }
 }

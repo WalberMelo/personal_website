@@ -1,5 +1,6 @@
 import * as React from "react";
 import "../header/header.css";
+import { changeBorderRightColor } from "./ResponsiveAppBarPages";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -36,14 +37,6 @@ const pages = [
 
 function ResponsiveAppBar({ theme }) {
   const { mode } = theme.palette;
-  let borderRightColor;
-
-  if (mode === "light") {
-    borderRightColor = "1px solid #909090";
-  }
-  if (mode === "dark") {
-    borderRightColor = "1px solid #f3f3f3";
-  }
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -72,8 +65,8 @@ function ResponsiveAppBar({ theme }) {
           sx={{
             display: "flex",
             justifyContent: "center",
-            marginRight: "8em",
           }}
+          className="navbar__container"
         >
           <Toolbar disableGutters>
             <Box
@@ -136,7 +129,7 @@ function ResponsiveAppBar({ theme }) {
                     textTransform: "none",
                     display: "block",
                     fontSize: "1.2em",
-                    borderRight: borderRightColor,
+                    borderRight: changeBorderRightColor(mode),
                     borderRadius: "0px",
                     "&.MuiButtonBase-root:hover": {
                       bgcolor: "transparent",

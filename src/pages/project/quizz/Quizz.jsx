@@ -5,12 +5,13 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { FaReact, FaFigma } from "react-icons/fa";
 import { SiVite, SiReactrouter } from "react-icons/si";
+import Footer from "../../../components/footer/Footer";
 
 function Quizz({ theme }) {
-  // const { mode } = theme.palette;
+  const { mode } = theme.palette;
 
   return (
-    <main>
+    <main className="main__projects">
       <div className="introduction">
         <div className="summary">
           <h1>Quizzical Trivial</h1>
@@ -22,7 +23,7 @@ function Quizz({ theme }) {
           </Typography>
         </div>
         <div className="list_of_features">
-          <div>
+          <Box className="site_view">
             <Typography sx={{ mb: 2 }}>
               <b>Live</b>
             </Typography>
@@ -54,8 +55,8 @@ function Quizz({ theme }) {
               alt="quizz app"
               className="project-img img--border"
             />
-          </div>
-          <Box sx={{ mt: 12 }}>
+          </Box>
+          <Box className="site_features">
             <Typography sx={{ mb: 4 }}>
               <b>Main features</b>
             </Typography>
@@ -66,7 +67,7 @@ function Quizz({ theme }) {
               <li>Feedback to the user after answer successfully</li>
             </ul>
           </Box>
-          <Box sx={{ mt: 12 }}>
+          <Box className="site_stacks">
             <Typography sx={{ mb: 4 }}>
               <b>Stack</b>
             </Typography>
@@ -145,15 +146,8 @@ function Quizz({ theme }) {
           </div>
         </div>
       </div>
-      <Box
-        sx={{
-          display: "grid",
-          gap: 4,
-          gridTemplateColumns: "repeat(2, 1fr)",
-          mt: 20,
-          mb: 20,
-        }}
-      >
+
+      <div className="web__stack--projects">
         <div>
           <img
             src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673394141/portofolio/x3wfk9eqbiuzqvachvl9.png"
@@ -168,8 +162,9 @@ function Quizz({ theme }) {
             className="project-img img--border"
           />
         </div>
-      </Box>
-      <Box className="process">
+      </div>
+
+      <div className="process">
         <div className="Problems_and_thought">
           <h2 className="sub-title">Problems and thought process</h2>
           <Typography sx={{ mb: 3, textAlign: "center" }}>
@@ -181,7 +176,7 @@ function Quizz({ theme }) {
             and display a feedback for the user according to the results.
           </Typography>
         </div>
-      </Box>
+      </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
           src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673396111/portofolio/agiyrh6xcyksipyvzyx8.png"
@@ -189,6 +184,7 @@ function Quizz({ theme }) {
           className="img--border Problems_and_thought_img"
         />
       </Box>
+
       <div className="Lessons_Learned">
         <h2 className="sub-title">Lessons Learned</h2>
         <Typography>
@@ -198,6 +194,7 @@ function Quizz({ theme }) {
           following SOLID principles.
         </Typography>
       </div>
+      <Footer theme={mode} />
     </main>
   );
 }

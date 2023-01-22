@@ -1,5 +1,6 @@
 import React from "react";
 import "../../home/sectionProjects/projects.css";
+import Footer from "../../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
 import CurrentProject from "../../home/sectionProjects/CurrentProject";
 
@@ -8,7 +9,9 @@ import { Box } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Typography from "@mui/material/Typography";
 
-export function Allprojects() {
+export function Allprojects({ theme }) {
+  const { mode } = theme.palette;
+
   const navigate = useNavigate();
 
   return (
@@ -41,13 +44,16 @@ export function Allprojects() {
               share with all users allowing them to add those songs to their own
               personal playlist.
             </Typography>
-            <div onClick={() => navigate("/project-melody")}>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-melody")}
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
           </div>
           <div className="div-projects--details">
-            <Box className="quizz-grid">
+            <Box id="quizz-grid">
               <Box sx={{ mr: 2 }}>
                 <img
                   src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
@@ -71,7 +77,10 @@ export function Allprojects() {
               users can answer the questions as many times as they need until
               finding all the correct results in the game.
             </Typography>
-            <Box sx={{ mt: 2 }} onClick={() => navigate("/project-quizz")}>
+            <Box
+              className="btn__view--project"
+              onClick={() => navigate("/project-quizz")}
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </Box>
@@ -89,7 +98,10 @@ export function Allprojects() {
               bookmark their recipes favorites and also upload your own. It was
               built with HTML, SASS and advanced vanilla Javascript.
             </Typography>
-            <div onClick={() => navigate("/project-cooker")}>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-cooker")}
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
@@ -107,7 +119,10 @@ export function Allprojects() {
               taste.The page was built using basic web development technologies,
               HTML, CSS and basic vanilla Javascript.
             </Typography>
-            <div onClick={() => navigate("/project-getfood")}>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-getfood")}
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
@@ -115,6 +130,7 @@ export function Allprojects() {
         </div>
       </section>
       <CurrentProject />
+      <Footer theme={mode} />
     </main>
   );
 }

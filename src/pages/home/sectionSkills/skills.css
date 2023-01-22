@@ -17,6 +17,10 @@
   margin-bottom: 3em;
 }
 
+.skills--title > h1 {
+  margin-bottom: 1.2em;
+}
+
 .stacks__skills--container {
   display: grid;
   grid-template-columns: 1fr 1fr;

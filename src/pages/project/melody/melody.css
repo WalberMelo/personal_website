@@ -8,6 +8,10 @@
   margin-bottom: 2rem;
 }
 
+.main__projects {
+  margin-top: 4em;
+}
+
 /***** Section Introduction  ******/
 
 .introduction {
@@ -32,6 +36,11 @@
   grid-template-columns: 6fr 2fr 1fr;
   gap: 4rem;
   margin-bottom: 6rem;
+}
+
+.site_features,
+.site_stacks {
+  margin-top: 12px;
 }
 
 .ul-features {
@@ -117,6 +126,14 @@
   border-radius: 3px;
 }
 
+.web__stack--projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
 /***** Section Problems_and_thought  ******/
 
 .process {
@@ -144,4 +161,168 @@
 .Lessons_Learned {
   margin-bottom: 6rem;
   margin-top: 6rem;
+}
+
+/************************/
+/** RESPONSIBLE MOBILE **/
+/***********************/
+
+/* Introduction */
+@media only screen and (max-width: 1128px) {
+  .list_of_features {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 6rem;
+    gap: 1rem;
+  }
+
+  .site_view {
+    grid-column: 1 / 3;
+    margin-bottom: 4rem;
+  }
+
+  .site_features {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0px;
+    padding-left: 2em;
+  }
+
+  .site_stacks {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0px;
+    padding-left: 2em;
+  }
+
+  /* Project purpose and goal */
+
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: 0px;
+  }
+
+  .web__stack--projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    gap: 0em;
+  }
+
+  .web__stack--projects > div {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  /* Problems and though process */
+  .Problems_and_thought,
+  .Problems_and_thought_img {
+    width: 80%;
+  }
+
+  .stack-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 783px) {
+  .div-projects > h1 {
+    font-size: 1.8em;
+  }
+
+  .design-figma {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 0rem;
+  }
+  .stack-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .stack-icon {
+    width: 60%;
+    height: 40%;
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .summary > h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  .summary > h1 {
+    font-size: 2em;
+  }
+
+  .div-projects > h1 {
+    font-size: 1.6em;
+  }
+
+  .stack-icon {
+    width: 70%;
+    height: 40%;
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .stack-icon {
+    width: 80%;
+    height: 40%;
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .stack-icon {
+    width: 80%;
+    height: 25%;
+    padding: 0.4rem 1.5rem;
+  }
+
+  /* text inside stack icons */
+  #root > div > main > div.project-grid > div.stack-icons > div > span {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .summary > h1 {
+    font-size: 1.4em;
+  }
+
+  .sub-title {
+    font-size: 1em;
+  }
+
+  .div-projects > h1 {
+    font-size: 1.1em;
+  }
+  .stack-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+  }
+  .stack-icon {
+    width: 60%;
+    height: 40%;
+    padding: 0.4rem 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1.2rem;
+  }
 }

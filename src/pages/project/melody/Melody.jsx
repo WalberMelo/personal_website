@@ -1,4 +1,5 @@
 import "./melody.css";
+import Footer from "../../../components/footer/Footer";
 import React from "react";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -7,10 +8,10 @@ import { FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 
 function Melody({ theme }) {
-  // const { mode } = theme.palette;
+  const { mode } = theme.palette;
 
   return (
-    <main>
+    <main className="main__projects">
       <div className="introduction">
         <div className="summary">
           <h1>Melody Music Stream</h1>
@@ -28,7 +29,7 @@ function Melody({ theme }) {
           </Typography>
         </div>
         <div className="list_of_features">
-          <div>
+          <Box className="site_view">
             <Typography sx={{ mb: 2 }}>
               <b>Live</b>
             </Typography>
@@ -59,8 +60,8 @@ function Melody({ theme }) {
               alt="melody"
               className="project-img img--border"
             />
-          </div>
-          <Box sx={{ mt: 12 }}>
+          </Box>
+          <Box className="site_features">
             <Typography sx={{ mb: 4 }}>
               <b>Main features</b>
             </Typography>
@@ -76,7 +77,7 @@ function Melody({ theme }) {
               <li>Advanced search page</li>
             </ul>
           </Box>
-          <Box sx={{ mt: 12 }}>
+          <Box className="site_stacks">
             <Typography sx={{ mb: 4 }}>
               <b>Stack</b>
             </Typography>
@@ -192,9 +193,9 @@ function Melody({ theme }) {
             </Typography>
           </div>
           <div className="stack-icon">
-            <FaNodeJs color="#303030" fontSize={30} />
+            <FaNodeJs color="inherit" fontSize={30} />
             <Typography
-              sx={{ color: "#303030", ml: "1rem" }}
+              sx={{ color: "inherit", ml: "1rem" }}
               component={"span"}
             >
               NodeJS
@@ -202,15 +203,8 @@ function Melody({ theme }) {
           </div>
         </div>
       </div>
-      <Box
-        sx={{
-          display: "grid",
-          gap: 4,
-          gridTemplateColumns: "repeat(2, 1fr)",
-          mt: 20,
-          mb: 20,
-        }}
-      >
+
+      <div className="web__stack--projects">
         <div>
           <img
             src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673296746/portofolio/l5qm7g0bx2unvyep7uif.png "
@@ -225,8 +219,9 @@ function Melody({ theme }) {
             className="project-img img--border"
           />
         </div>
-      </Box>
-      <Box className="process">
+      </div>
+
+      <div className="process">
         <div className="Problems_and_thought">
           <h2 className="sub-title">Problems and thought process</h2>
           <Typography sx={{ mb: 3, textAlign: "center" }}>
@@ -244,7 +239,7 @@ function Melody({ theme }) {
             with RTK creating a single end-point with tag values.
           </Typography>
         </div>
-      </Box>
+      </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
           src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673297148/portofolio/lxxerosnmpk43ccs8jtn.png"
@@ -252,6 +247,7 @@ function Melody({ theme }) {
           className="img--border Problems_and_thought_img"
         />
       </Box>
+
       <div className="Lessons_Learned">
         <h2 className="sub-title">Lessons Learned</h2>
         <Typography sx={{ mb: 1 }}>
@@ -270,6 +266,7 @@ function Melody({ theme }) {
           tool Kit, Figma, Postman.
         </Typography>
       </div>
+      <Footer theme={mode} />
     </main>
   );
 }

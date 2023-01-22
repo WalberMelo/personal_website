@@ -4,13 +4,14 @@ import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiVite, SiReactrouter, SiJavascript } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import Footer from "../../../components/footer/Footer";
 
 function Getfood({ theme }) {
-  // const { mode } = theme.palette;
+  const { mode } = theme.palette;
 
   return (
-    <main>
+    <main className="main__projects">
       <div className="introduction">
         <div className="summary">
           <h1>GetFood </h1>
@@ -22,7 +23,7 @@ function Getfood({ theme }) {
           </Typography>
         </div>
         <div className="list_of_features">
-          <div>
+          <Box className="site_view">
             <Typography sx={{ mb: 2 }}>
               <b>Live</b>
             </Typography>
@@ -54,8 +55,8 @@ function Getfood({ theme }) {
               alt="getfood page"
               className="project-img img--border"
             />
-          </div>
-          <Box sx={{ mt: 12 }}>
+          </Box>
+          <Box className="site_features">
             <Typography sx={{ mb: 4 }}>
               <b>Main features</b>
             </Typography>
@@ -67,7 +68,7 @@ function Getfood({ theme }) {
               <li>Subscribe form section</li>
             </ul>
           </Box>
-          <Box sx={{ mt: 12 }}>
+          <Box className="site_stacks">
             <Typography sx={{ mb: 4 }}>
               <b>Stack</b>
             </Typography>
@@ -160,15 +161,8 @@ function Getfood({ theme }) {
           </div>
         </div>
       </div>
-      <Box
-        sx={{
-          display: "grid",
-          gap: 4,
-          gridTemplateColumns: "repeat(2, 1fr)",
-          mt: 20,
-          mb: 20,
-        }}
-      >
+
+      <div className="web__stack--projects">
         <div>
           <img
             src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673458609/portofolio/getfood/n34qghnqpagtik07bumm.png"
@@ -183,8 +177,9 @@ function Getfood({ theme }) {
             className="project-img img--border"
           />
         </div>
-      </Box>
-      <Box className="process">
+      </div>
+
+      <div className="process">
         <div className="Problems_and_thought">
           <h2 className="sub-title">Problems and thought process</h2>
           <Typography sx={{ mb: 3, textAlign: "center" }}>
@@ -195,7 +190,7 @@ function Getfood({ theme }) {
             accessible to users with disabilities.
           </Typography>
         </div>
-      </Box>
+      </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
           src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673458624/portofolio/getfood/rfwnml8jgtov2n0uoeam.png"
@@ -214,6 +209,7 @@ function Getfood({ theme }) {
           design concepts involved for creating a business product.
         </Typography>
       </div>
+      <Footer theme={mode} />
     </main>
   );
 }

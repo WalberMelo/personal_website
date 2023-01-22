@@ -3,9 +3,9 @@
 /*************************************/
 
 .section-cta {
-  margin-bottom: 4rem;
-  height: 100vh;
+  height: 100%;
   border-radius: 8px;
+  margin-bottom: 10rem;
 }
 
 .div-cta > h1 {
@@ -22,7 +22,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   column-gap: 3.2rem;
-  row-gap: 2.4rem;
+  row-gap: 1rem;
 }
 
 .cta-form label {
@@ -109,7 +109,7 @@ textarea {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     column-gap: 3.2rem;
-    row-gap: 2.4rem;
+    row-gap: 1rem;
   }
 
   .btn-send {
@@ -119,6 +119,10 @@ textarea {
 }
 
 @media only screen and (max-width: 775px) {
+  .section-cta {
+    margin-bottom: 8rem;
+  }
+
   .btn-send {
     padding: 0.8em 1.2em;
     font-size: 0.8em;
@@ -135,9 +139,6 @@ textarea {
       display: flex;
       flex-direction: column-reverse;
     }
-    .section-cta {
-      margin-bottom: 8rem;
-    }
 
     .cta__img--grid {
       margin-top: 0;
@@ -153,17 +154,11 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 512px) {
+/* @media only screen and (max-width: 512px) {
   .section-cta {
     margin-bottom: 10rem;
   }
-}
-
-@media only screen and (max-width: 478px) {
-  .section-cta {
-    margin-bottom: 12rem;
-  }
-}
+} */
 
 @media only screen and (max-width: 438px) {
   .div-cta > h1 {
@@ -173,6 +168,6 @@ textarea {
 
 @media only screen and (max-width: 375px) {
   .section-cta {
-    margin-bottom: 14rem;
+    margin-bottom: 4rem;
   }
 }

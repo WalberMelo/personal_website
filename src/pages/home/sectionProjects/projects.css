@@ -26,19 +26,36 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  column-gap: 8rem;
+  column-gap: 4rem;
   row-gap: 4rem;
 }
 
 .div-projects--details {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr auto auto auto;
 }
 
 .div-projects--details > img {
+  margin-bottom: 2em;
   width: 100%;
-  margin-bottom: 2rem;
   border-radius: 4px;
+}
+
+.div-projects--details > h2 {
+  margin-bottom: 1.2rem;
+}
+
+/* view project button */
+.btn__view--project {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.btn__view--project:hover {
+  cursor: pointer;
+  color: #979393;
 }
 
 .project-border {
@@ -48,31 +65,14 @@
   border-radius: 4px;
 }
 
+#quizz-grid {
+  display: flex;
+  margin-bottom: 3.5em;
+}
+
 .quizzical-img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 3rem;
-}
-
-.div-projects--details div {
-  display: flex;
-  cursor: pointer;
-}
-
-.div-projects--details div:hover {
-  color: #979393;
-}
-
-.div-projects--details > h2 {
-  margin-bottom: 1.2rem;
-}
-
-.div-projects--details > p {
-  margin-bottom: 1rem;
-}
-
-.view_project:hover {
-  color: #979393;
 }
 
 /*************************************/
@@ -88,10 +88,10 @@
 }
 
 .current__project > img {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.current__project > h1 {
+.current__project > h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }

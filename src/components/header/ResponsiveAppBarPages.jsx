@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRef } from "react";
 import "../header/header.css";
 
 import AppBar from "@mui/material/AppBar";
@@ -14,6 +15,18 @@ import MenuItem from "@mui/material/MenuItem";
 
 import Logo from "../../assets/header/logo.svg";
 import { NavLink } from "react-router-dom";
+
+// Help Functions //
+export const changeBorderRightColor = (mode) => {
+  let borderRightColor;
+
+  if (mode === "light") {
+    return (borderRightColor = "1px solid #909090");
+  }
+  if (mode === "dark") {
+    return (borderRightColor = "1px solid #f3f3f3");
+  }
+};
 
 const pages = [
   <NavLink
@@ -44,14 +57,6 @@ const pages = [
 
 function ResponsiveAppBarPages({ theme }) {
   const { mode } = theme.palette;
-  let borderRightColor;
-
-  if (mode === "light") {
-    borderRightColor = "1px solid #909090";
-  }
-  if (mode === "dark") {
-    borderRightColor = "1px solid #f3f3f3";
-  }
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -77,11 +82,12 @@ function ResponsiveAppBarPages({ theme }) {
         <img className="logo fadeIn" alt="logo" src={Logo} />
         <Container
           maxWidth="xl"
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            marginRight: "8em",
-          }}
+          // sx={{
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   marginRight: "8em",
+          // }}
+          id="btn__mobile"
         >
           <Toolbar disableGutters>
             <Box
@@ -144,7 +150,7 @@ function ResponsiveAppBarPages({ theme }) {
                     textTransform: "none",
                     display: "block",
                     fontSize: "1.2em",
-                    borderRight: borderRightColor,
+                    borderRight: changeBorderRightColor(mode),
                     borderRadius: "0px",
                     "&.MuiButtonBase-root:hover": {
                       bgcolor: "transparent",

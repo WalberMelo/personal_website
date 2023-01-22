@@ -15,14 +15,6 @@
 /* LOGO */
 /*************************************/
 
-/* .logo {
-  position: absolute;
-  top: -40%;
-  left: -3%;
-  width: 190px;
-  border-bottom-right-radius: 100%;
-  filter: brightness(90%);
-} */
 .logo {
   width: 10%;
   border-radius: 50px 50% 500cm;
@@ -43,6 +35,18 @@
 /*************************************/
 /* NAVIGATION */
 /*************************************/
+
+#navbar__container {
+  display: flex;
+  align-items: center;
+}
+
+#btn__mobile {
+  display: flex;
+  justify-content: center;
+  margin-right: 8em;
+}
+
 /* Hidden border right from navbar  */
 #root
   > div
@@ -65,6 +69,10 @@
   > div.MuiBox-root.css-1t6c9ts
   > button:nth-child(3) {
   border-right: none;
+}
+
+.navbar__container {
+  margin-right: 8em;
 }
 
 .main-nav-link {
@@ -116,48 +124,104 @@
 /** RESPONSIVE DESIGN **/
 /***********************/
 
-/** HEADER **/
-@media only screen and (max-width: 837px) {
+@media only screen and (max-width: 899px) {
   /* NAVIGATION */
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-    margin-bottom: 0rem;
-  }
 
-  .btn__open--Nav {
+  #navbar__container {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: flex-end;
   }
 
-  .btn__mobile {
+  #btn__mobile {
     display: flex;
+    justify-content: flex-end;
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  /* NAVIGATION */
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 2em;
   }
 
-  .hidden-nav {
-    visibility: hidden;
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* NAVIGATION */
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 2em;
   }
 
-  .header-main-nav {
-    margin: 0;
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* NAVIGATION */
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 1em;
   }
 
-  .main-nav-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-    gap: 0rem;
-    /* border: 1px solid red; */
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 2px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  /* NAVIGATION */
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 1em;
   }
 
-  .main-nav-link {
-    border-right: none;
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 2px;
   }
 }
 
@@ -169,16 +233,48 @@
   }
 
   /* NAVIGATION */
-
-  .header-main-nav {
-    margin-left: 10em;
-    margin-right: 10em;
-    width: 60%;
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 3em;
   }
 
-  .main-nav-link {
-    width: 120px;
-    padding-top: 0.4rem;
-    font-size: 1.6rem;
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 9px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .logo {
+    top: -20%;
+    left: -10%;
+    width: 20%;
+  }
+
+  /* NAVIGATION */
+  /* move mobile button to right */
+  #root
+    > div
+    > div
+    > header
+    > div
+    > div
+    > div
+    > div.MuiBox-root.css-1lvtzne
+    > button {
+    margin-right: 2em;
+  }
+
+  /* position dark/light  button */
+  #root > div > div > button {
+    top: 9px;
   }
 }

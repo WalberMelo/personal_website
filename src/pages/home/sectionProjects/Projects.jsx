@@ -38,13 +38,16 @@ export function Projects() {
               share with all users allowing them to add those songs to their own
               personal playlist.
             </Typography>
-            <div onClick={() => navigate("/project-melody")}>
+            <div
+              onClick={() => navigate("/project-melody")}
+              className="btn__view--project"
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
           </div>
           <div className="div-projects--details">
-            <Box sx={{ mb: 2 }} className="quizz-grid">
+            <Box sx={{ mb: 2 }} id="quizz-grid">
               <Box sx={{ mr: 2 }}>
                 <img
                   src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
@@ -69,7 +72,10 @@ export function Projects() {
               questions as many times as they need until finding all the correct
               results in the game.
             </Typography>
-            <Box onClick={() => navigate("/project-quizz")}>
+            <Box
+              onClick={() => navigate("/project-quizz")}
+              className="btn__view--project"
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </Box>
@@ -90,7 +96,10 @@ export function Projects() {
               bookmark their recipes favorites and also upload your own. It was
               built with HTML, SASS and advanced vanilla Javascript.
             </Typography>
-            <div onClick={() => navigate("/project-cooker")}>
+            <div
+              onClick={() => navigate("/project-cooker")}
+              className="btn__view--project"
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
@@ -108,7 +117,10 @@ export function Projects() {
               taste. The page was built using basic web development
               technologies, HTML, CSS and basic vanilla Javascript.
             </Typography>
-            <div onClick={() => navigate("/project-getfood")}>
+            <div
+              onClick={() => navigate("/project-getfood")}
+              className="btn__view--project"
+            >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
             </div>
