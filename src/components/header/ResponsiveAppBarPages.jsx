@@ -79,16 +79,8 @@ function ResponsiveAppBarPages({ theme }) {
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
-        <img className="logo fadeIn" alt="logo" src={Logo} />
-        <Container
-          maxWidth="xl"
-          // sx={{
-          //   display: "flex",
-          //   justifyContent: "center",
-          //   marginRight: "8em",
-          // }}
-          id="btn__mobile"
-        >
+        <img className="logo" alt="logo" src={Logo} />
+        <Container maxWidth="xl" id="btn__mobile">
           <Toolbar disableGutters>
             <Box
               sx={{

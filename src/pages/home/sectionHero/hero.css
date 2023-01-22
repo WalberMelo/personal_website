@@ -3,15 +3,23 @@
 /*************************************/
 
 .section-hero {
-  height: 95vh;
+  height: 100%;
   margin-bottom: 6em;
 }
+
 .hero__container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   height: 100%;
   border-radius: 9%;
+  justify-items: center;
+  align-items: center;
+}
+
+.hero-social--box {
+  grid-column: 2;
+  margin-top: 2em;
 }
 
 /*************************************/
@@ -19,7 +27,6 @@
 /*************************************/
 
 .hero__container--text {
-  margin-top: 8em;
   line-height: 3em;
   letter-spacing: 2px;
   position: relative;
@@ -93,24 +100,11 @@
 /*************************************/
 /* IMAGE BOX */
 /*************************************/
-
-.hero__container--img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 .hero-img--box > span > img {
   width: 90%;
   border: 0.6em solid;
   border-radius: 50%;
   filter: opacity(80%);
-  margin-top: 8em;
-}
-.idea-icon {
-  position: absolute;
-  top: 10%;
-  left: 75%;
 }
 
 /*************************************/
@@ -130,7 +124,7 @@
   margin-left: 2em;
 }
 
-#scrollToTop > div > div.hero__container--img > div.hero-social--box > a > svg {
+#scrollToTop > div > div.hero-social--box > a > svg {
   font-size: 40px;
 }
 
@@ -288,15 +282,29 @@ span:nth-child(7) {
     margin-bottom: 0em;
   }
   .hero__container {
-    display: block;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    align-items: center;
     border-radius: 9%;
-    position: relative;
+  }
+
+  .hero__container--text {
+    grid-column: 1 / 3;
+  }
+
+  .hero-img--box {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .hero-social--box {
+    grid-column: 1 / 3;
+    grid-row: 3;
   }
 
   /* TEXT */
   .hero__container--text {
-    order: -1;
     margin-top: 0em;
   }
 
@@ -330,53 +338,11 @@ span:nth-child(7) {
     margin-bottom: 2em;
   }
 
-  /* social buttons */
-  .hero-social--box {
-    margin-bottom: 2em;
-    position: absolute;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   /* Buttons */
 
   .btn-hero {
     padding: 0.8em 1.2em;
     font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 764px) {
-  /* social buttons */
-  .hero-social--box {
-    margin-bottom: 2em;
-    position: absolute;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media only screen and (max-width: 542px) {
-  /* social buttons */
-  .hero-social--box {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 470px) {
-  /* social buttons */
-  .hero-social--box {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 422px) {
-  /* social buttons */
-  .hero-social--box {
-    width: 80%;
   }
 }
 
