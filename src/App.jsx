@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 /* Components */
 import ResponsiveAppBar from "./components/header/ResponsiveAppBar";
 import ResponsiveAppBarPages from "./components/header/ResponsiveAppBarPages";
-import Footer from "./components/footer/footer";
 import ScrollToTop from "./components/scroll/ScrollToTop";
 
 /* Pages */
