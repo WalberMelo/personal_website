@@ -113,7 +113,6 @@
 .hero-social--box {
   display: block;
   justify-content: space-evenly;
-  margin-bottom: 8em;
   z-index: 10;
 }
 
