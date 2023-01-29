@@ -47,7 +47,7 @@ function Melody({ theme }) {
               }}
             >
               <Link
-                href="https://melody-music-stream-front.vercel.app/"
+                href="https://melody-music-stream-walbermelo.vercel.app/"
                 underline="none"
                 target="_blank"
                 rel="noopener"

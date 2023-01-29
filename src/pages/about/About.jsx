@@ -61,13 +61,12 @@ function About({ theme }) {
               technologies.
             </p>
             <p>
-              I have been working in the IT sector for 5 years. In the
-              beginning, I was a technical support specialist, which gave me a
-              lot of experience in troubleshooting and a deep understanding of
-              IT infrastructure. Right now, I am seeking a full-time role where
-              I can help a company achieve its goals and work alongside senior
-              designers and developers who will raise my standards to what is
-              expected of any web application.
+              Before to be a developer, I worked as an IT technical support for
+              5 years which gave me a lot of experience working in the sector.
+              Right now, I am seeking a full-time role where I can help a
+              company achieve its goals and work alongside senior designers and
+              developers who will raise my standards to what is expected of any
+              web application.
             </p>
           </div>
         </div>
