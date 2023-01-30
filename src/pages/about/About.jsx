@@ -29,22 +29,19 @@ function About({ theme }) {
           <h1>HI, I'M WALBER MELO!</h1>
           <div>
             <p>
-              I am a web designer and Full-Stack developer. I am fascinated by
-              how technology can improve people's lives and transform society. I
-              am a dedicated and motivated person who does not hesitate to make
-              an extra effort to achieve my goals. I believe that active
-              listening skill is essential to effective collaboration between
-              people.
+              I am Designer and Full-Stack developer. I am fascinated by how
+              technology can improve people's lives and transform society. I am
+              a proactive person who does not hesitate to make an extra effort
+              to achieve my goals. I believe that active listening skill is
+              essential to effective collaboration between people.
             </p>
             <p>
               My journey with programming began when I was 12, but it didn't
-              last long. As I grew up, I followed the exponential advances in
-              technology. At my school, we had some computer classes, but at
-              that time we did not have access to the vast variety of learning
-              methods that are available today, which made it more difficult to
-              keep students stimulated. I am glad to know that today we have
+              last long. At my school, we had some computer classes, but at that
+              time we did not have access to the vast variety of learning
+              methods that are available today. I am glad that today we have
               wonderful tools to encourage and smoothly introduce everyone to
-              the beautiful world of programming.
+              the beautiful world of programming at any age.
             </p>
             <p>
               Years later, at university, I had contact with programming. Due to
