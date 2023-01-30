@@ -32,8 +32,8 @@ function About({ theme }) {
               I am a web designer and Full-Stack developer. I am fascinated by
               how technology can improve people's lives and transform society. I
               am a dedicated and motivated person who does not hesitate to make
-              an extra effort to achieve my goals. Additionally, I believe that
-              communication is the key to efficient collaboration between
+              an extra effort to achieve my goals. I believe that active
+              listening skill is essential to effective collaboration between
               people.
             </p>
             <p>
