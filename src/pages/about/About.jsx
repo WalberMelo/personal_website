@@ -31,9 +31,11 @@ function About({ theme }) {
             <p>
               I am Designer and Full-Stack developer. I am fascinated by how
               technology can improve people's lives and transform society. I am
-              a proactive person who does not hesitate to make an extra effort
-              to achieve my goals. I believe that active listening skill is
-              essential to effective collaboration between people.
+              fascinated by how technology can improve people's lives and
+              transform society. I am a goal-oriented person who does not
+              hesitate to make an extra effort to achieve that. I believe that
+              active listening is essential for effective collaboration between
+              people.
             </p>
             <p>
               My journey with programming began when I was 12, but it didn't
