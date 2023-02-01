@@ -33,7 +33,7 @@ function About({ theme }) {
               technology can improve people's lives and transform society. I am
               a goal-oriented person who does not hesitate to make an extra
               effort to achieve that. I believe that active listening and
-              communication is essential for effective collaboration between
+              communication are essential for effective collaboration between
               people.
             </p>
             <p>
