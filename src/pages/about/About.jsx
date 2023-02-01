@@ -31,10 +31,9 @@ function About({ theme }) {
             <p>
               I am Designer and Full-Stack developer. I am fascinated by how
               technology can improve people's lives and transform society. I am
-              fascinated by how technology can improve people's lives and
-              transform society. I am a goal-oriented person who does not
-              hesitate to make an extra effort to achieve that. I believe that
-              active listening is essential for effective collaboration between
+              a goal-oriented person who does not hesitate to make an extra
+              effort to achieve that. I believe that active listening and
+              communication is essential for effective collaboration between
               people.
             </p>
             <p>
