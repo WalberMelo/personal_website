@@ -29,9 +29,9 @@ function About({ theme }) {
           <h1>HI, I'M WALBER MELO!</h1>
           <div>
             <p>
-              I am a web designer and developer which is fascinated by how
-              technology improve people's lives and transform our society. I am
-              a goal-oriented person who does not hesitate to make an extra
+              I am a web designer and developer who is fascinated by how
+              technology improves people's lives and transforms our society. I
+              am a goal-oriented person who does not hesitate to make an extra
               effort to accomplish that. I believe that active listening and
               communication are essential for effective collaboration. I am very
               engaged in working alongside senior designers and developers who
