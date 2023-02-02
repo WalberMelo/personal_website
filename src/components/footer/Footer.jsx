@@ -16,10 +16,10 @@ function Footer(theme) {
 
   const logoImage = () => {
     if (mode?.theme === "light") {
-      return <img src={logoLight} className="logo_footer" />;
+      return <img src={logoLight} className="logo_footer" alt="logo" />;
     }
     if (mode?.theme === "dark") {
-      return <img src={logoDark} className="logo_footer" />;
+      return <img src={logoDark} className="logo_footer" alt="logo" />;
     }
   };
 

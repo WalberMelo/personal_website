@@ -20,7 +20,7 @@ export function Hero() {
       <div className="hero__container">
         <div className="hero__container--text box">
           <div className="hero-text--greetings fadeIn">
-            <img src={Aspas} className="hero-img--greetings" />
+            <img src={Aspas} className="hero-img--greetings" alt="animation" />
             <div>
               <Greeting />
             </div>
