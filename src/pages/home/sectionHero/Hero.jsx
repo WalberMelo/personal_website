@@ -50,10 +50,7 @@ export function Hero(theme) {
               <span>Web</span> <span>Designer</span> <span>and</span>
               <br />
               <span>Full Stack </span>
-              <span>
-                {/* <strong>Developer</strong> */}
-                {renderThemeColor()}
-              </span>
+              <span>{renderThemeColor()}</span>
             </p>
           </div>
           <span>
