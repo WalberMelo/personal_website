@@ -11,9 +11,20 @@ import Greeting from "./Greeting";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import { Typography } from "@mui/material";
 
-export function Hero() {
+export function Hero(theme) {
   const navigate = useNavigate();
+
+  let mode = theme;
+  const renderThemeColor = () => {
+    if (mode?.theme === "light") {
+      return <strong className="developer--light">Developer</strong>;
+    }
+    if (mode?.theme === "dark") {
+      return <strong className="developer--dark">Developer</strong>;
+    }
+  };
 
   return (
     <section className="section-hero" id="scrollToTop">
@@ -40,7 +51,8 @@ export function Hero() {
               <br />
               <span>Full Stack </span>
               <span>
-                <strong> Developer</strong>
+                {/* <strong>Developer</strong> */}
+                {renderThemeColor()}
               </span>
             </p>
           </div>

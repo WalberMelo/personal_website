@@ -10,7 +10,7 @@ function Home({ theme }) {
 
   return (
     <main className="home__page">
-      <Hero />
+      <Hero theme={mode} />
       <Skills />
       <Projects />
       <Contact />

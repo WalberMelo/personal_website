@@ -68,7 +68,13 @@
   margin-top: 0.2em;
   line-height: 1.2;
 }
-.hero-text--job > span > strong {
+
+.developer--light {
+  margin-left: 0.4em;
+  color: #4a7a98;
+}
+
+.developer--dark {
   margin-left: 0.4em;
   color: #9ec2f5;
 }
