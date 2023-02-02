@@ -30,13 +30,13 @@ function About({ theme }) {
           <div>
             <p>
               I am a web designer and developer who is fascinated by how
-              technology improves people's lives and transforms our society. I
-              am a goal-oriented person who does not hesitate to make an extra
-              effort to accomplish that. I believe that active listening and
-              communication are essential for effective collaboration. I am very
-              engaged in working alongside senior designers and developers who
-              will raise my standards to what is expected of any web
-              application.
+              technology improves people's lives and transform our society. I am
+              a goal-oriented person who does not hesitate to make an extra
+              effort to accomplish a task or challenge. I believe that active
+              listening and communication are essential for effective
+              collaboration. I am very engaged in working alongside senior
+              designers and developers who will raise my standards to what is
+              expected of any web application.
             </p>
             <p>
               My journey with programming began when I was 12, but it didn't
