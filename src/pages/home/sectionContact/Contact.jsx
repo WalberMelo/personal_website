@@ -58,21 +58,21 @@ function Contact() {
 }
 const itemData = [
   {
-    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1673995862/portofolio/zgkvikbwqubttrkmnou7.jpg",
+    img: "https://res.cloudinary.com/devwm/image/upload/v1673995862/portofolio/zgkvikbwqubttrkmnou7.jpg",
     title: "Developer",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1671228218/portofolio/xe9sndhxnft0nmb2lrui.jpg",
+    img: "https://res.cloudinary.com/devwm/image/upload/v1671228218/portofolio/xe9sndhxnft0nmb2lrui.jpg",
     title: "Laptop",
   },
   {
-    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1671229639/portofolio/feviiib0rv73yyyomdrn.jpg",
+    img: "https://res.cloudinary.com/devwm/image/upload/v1671229639/portofolio/feviiib0rv73yyyomdrn.jpg",
     title: "Turn ideas into reality",
   },
   {
-    img: "https://res.cloudinary.com/dc0yka6eb/image/upload/v1671229512/portofolio/knqwj9sqjqhzxnhsyd58.jpg",
+    img: "https://res.cloudinary.com/devwm/image/upload/v1671229512/portofolio/knqwj9sqjqhzxnhsyd58.jpg",
     title: "Coffee",
     cols: 2,
   },

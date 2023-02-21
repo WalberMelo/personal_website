@@ -26,7 +26,7 @@ export function Projects() {
         <div className="grid-projects">
           <div className="div-projects--details">
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
               alt="project"
               className="project-border"
             />
@@ -50,14 +50,14 @@ export function Projects() {
             <Box sx={{ mb: 2 }} id="quizz-grid">
               <Box sx={{ mr: 2 }}>
                 <img
-                  src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
+                  src="https://res.cloudinary.com/devwm/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
                   alt="projects"
                   className="quizzical-img"
                 />
               </Box>
               <Box>
                 <img
-                  src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673394265/portofolio/fsa3q1jkzeyt3zg6m5vg.png"
+                  src="https://res.cloudinary.com/devwm/image/upload/v1673394265/portofolio/fsa3q1jkzeyt3zg6m5vg.png"
                   alt="project"
                   className="quizzical-img"
                 />
@@ -83,7 +83,7 @@ export function Projects() {
           <div className="div-projects--details">
             <img
               src={
-                "https://res.cloudinary.com/dc0yka6eb/image/upload/v1673901205/portofolio/cooker/vh04bav9hqqkifo78yvc.png"
+                "https://res.cloudinary.com/devwm/image/upload/v1673901205/portofolio/cooker/vh04bav9hqqkifo78yvc.png"
               }
               alt="projects"
               className="cooker-img"
@@ -106,7 +106,7 @@ export function Projects() {
           </div>
           <div className="div-projects--details">
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"
               alt="projects"
               className="project-border"
             />

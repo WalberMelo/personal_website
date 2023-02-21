@@ -50,7 +50,7 @@ function Cooker({ theme }) {
             </Box>
 
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673904876/portofolio/cooker/uz0edoi1nltep9kb2eiv.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673904876/portofolio/cooker/uz0edoi1nltep9kb2eiv.png"
               alt="cooker app"
               className="project-img img--border"
             />
@@ -97,7 +97,7 @@ function Cooker({ theme }) {
         <div className="design-figma">
           <div>
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673912765/portofolio/cooker/mlh3zeysbcpspnpiztd8.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673912765/portofolio/cooker/mlh3zeysbcpspnpiztd8.png"
               alt="getfood mobile"
               className="cooker_design"
             />
@@ -148,14 +148,14 @@ function Cooker({ theme }) {
       <div className="web__stack--projects">
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673920528/portofolio/cooker/z9bnar0iz8vuvodxtgiy.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673920528/portofolio/cooker/z9bnar0iz8vuvodxtgiy.png"
             alt=""
             className="project-img img--border"
           />
         </div>
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673920544/portofolio/cooker/ibaqaw4gcsq8wrvup3k2.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673920544/portofolio/cooker/ibaqaw4gcsq8wrvup3k2.png"
             alt=""
             className="project-img img--border"
           />
@@ -179,7 +179,7 @@ function Cooker({ theme }) {
       </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
-          src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673914169/portofolio/cooker/jipq3hgkiuotii2vsfcn.png"
+          src="https://res.cloudinary.com/devwm/image/upload/v1673914169/portofolio/cooker/jipq3hgkiuotii2vsfcn.png"
           alt=""
           className="img--border Problems_and_thought_img"
         />

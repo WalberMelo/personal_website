@@ -21,7 +21,7 @@ function About({ theme }) {
         <div className="about-page">
           <figure>
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673964995/portofolio/oyqkkvb2z6houvc4jmkp.jpg"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673964995/portofolio/oyqkkvb2z6houvc4jmkp.jpg"
               alt=""
               className="about-image"
             />

@@ -5,7 +5,7 @@ function CurrentProject() {
     <section className="section-current-project">
       <div className="current__project">
         <img
-          src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1674058651/portofolio/oak5sb9iglzjxrxinygd.png"
+          src="https://res.cloudinary.com/devwm/image/upload/v1674058651/portofolio/oak5sb9iglzjxrxinygd.png"
           alt="current project"
           className="current__project--img"
         />

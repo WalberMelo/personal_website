@@ -51,7 +51,7 @@ function Quizz({ theme }) {
             </Box>
 
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673394265/portofolio/fsa3q1jkzeyt3zg6m5vg.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673394265/portofolio/fsa3q1jkzeyt3zg6m5vg.png"
               alt="quizz app"
               className="project-img img--border"
             />
@@ -101,7 +101,7 @@ function Quizz({ theme }) {
             </Box>
             <img
               className="figma-img"
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673386917/portofolio/dbzxqcavroywjyuwhgcm.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673386917/portofolio/dbzxqcavroywjyuwhgcm.png"
               alt="figma-design"
             />
           </div>
@@ -150,14 +150,14 @@ function Quizz({ theme }) {
       <div className="web__stack--projects">
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673394141/portofolio/x3wfk9eqbiuzqvachvl9.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673394141/portofolio/x3wfk9eqbiuzqvachvl9.png"
             alt=""
             className="project-img img--border"
           />
         </div>
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673393963/portofolio/ys9bv2bdb8yusyfvb7lb.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673393963/portofolio/ys9bv2bdb8yusyfvb7lb.png"
             alt=""
             className="project-img img--border"
           />
@@ -179,7 +179,7 @@ function Quizz({ theme }) {
       </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
-          src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673396111/portofolio/agiyrh6xcyksipyvzyx8.png"
+          src="https://res.cloudinary.com/devwm/image/upload/v1673396111/portofolio/agiyrh6xcyksipyvzyx8.png"
           alt=""
           className="img--border Problems_and_thought_img"
         />

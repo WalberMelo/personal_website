@@ -51,7 +51,7 @@ function Getfood({ theme }) {
             </Box>
 
             <img
-              src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673446017/portofolio/getfood/wcbypdwr1obs5sfuuxsg.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1673446017/portofolio/getfood/wcbypdwr1obs5sfuuxsg.png"
               alt="getfood page"
               className="project-img img--border"
             />
@@ -107,12 +107,12 @@ function Getfood({ theme }) {
               }}
             >
               <img
-                src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673454307/portofolio/getfood/ujfdjrjgbrtxcga95gst.png"
+                src="https://res.cloudinary.com/devwm/image/upload/v1673454307/portofolio/getfood/ujfdjrjgbrtxcga95gst.png"
                 alt="getfood mobile"
                 className="getfood_design"
               />
               <img
-                src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673454323/portofolio/getfood/vfmwenpdlwvv8rknsd90.png"
+                src="https://res.cloudinary.com/devwm/image/upload/v1673454323/portofolio/getfood/vfmwenpdlwvv8rknsd90.png"
                 alt="getfood mobile"
                 className="getfood_design"
               />
@@ -165,14 +165,14 @@ function Getfood({ theme }) {
       <div className="web__stack--projects">
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673458609/portofolio/getfood/n34qghnqpagtik07bumm.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673458609/portofolio/getfood/n34qghnqpagtik07bumm.png"
             alt=""
             className="project-img img--border"
           />
         </div>
         <div>
           <img
-            src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673458617/portofolio/getfood/fuothbzwdlyxufpvzwz3.png"
+            src="https://res.cloudinary.com/devwm/image/upload/v1673458617/portofolio/getfood/fuothbzwdlyxufpvzwz3.png"
             alt=""
             className="project-img img--border"
           />
@@ -193,7 +193,7 @@ function Getfood({ theme }) {
       </div>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
-          src="https://res.cloudinary.com/dc0yka6eb/image/upload/v1673458624/portofolio/getfood/rfwnml8jgtov2n0uoeam.png"
+          src="https://res.cloudinary.com/devwm/image/upload/v1673458624/portofolio/getfood/rfwnml8jgtov2n0uoeam.png"
           alt=""
           className="img--border Problems_and_thought_img"
         />
