@@ -19,6 +19,8 @@ import {
   SiRedux,
   SiTypescript,
   SiJavascript,
+  SiNextdotjs,
+  SiAmazonaws,
   SiMongodb,
   SiFirebase,
   SiMiro,
@@ -33,12 +35,12 @@ export function Skills() {
       <div className="skills--title">
         <h1>My Skills</h1>
         <Typography component={"span"}>
-          As a web developer, I have gained a wide range of skills through my
-          studies, projects, and work experience. I have learned the
-          fundamentals of web development, including HTML, CSS, JavaScript, and
-          various web development frameworks such as React, Redux. I have also
-          gained experience with backend technologies such as Node.js, Express
-          and MongoDB.
+          I have gained a wide range of skills through my studies, projects, and
+          work experience. I have learned the fundamentals of web development,
+          including HTML, CSS, JavaScript, Typescript and various frameworks
+          such as React, NextJS, Redux. I have also gained experience with
+          backend technologies such as Nodejs, Nestjs, Express, SQL, MongoDB and
+          cloud serverless using AWS services as infrastructure.
         </Typography>
       </div>
       <div className="stacks__skills--container">
@@ -84,6 +86,10 @@ export function Skills() {
                   <Typography component={"span"}>React</Typography>
                 </div>
                 <div>
+                  <SiNextdotjs />
+                  <Typography component={"span"}>NextJS</Typography>
+                </div>
+                <div>
                   <SiRedux />
                   <Typography component={"span"}>Redux</Typography>
                 </div>
@@ -113,6 +119,10 @@ export function Skills() {
                 <div>
                   <SiFirebase />
                   <Typography component={"span"}>Firebase</Typography>
+                </div>
+                <div>
+                  <SiAmazonaws />
+                  <Typography component={"span"}>Amazon</Typography>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ import Melody from "./pages/project/melody/Melody";
 import Quizz from "./pages/project/quizz/Quizz";
 import Getfood from "./pages/project/getfood/Getfood";
 import Cooker from "./pages/project/cooker/Cooker";
+import QuoteGenerator from "./pages/project/quoteGenerator/quoteGenerator";
 
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
@@ -119,6 +120,15 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Cooker theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-quotegenerator"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <QuoteGenerator theme={theme} />
                 </>
               }
             />

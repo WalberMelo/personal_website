@@ -106,19 +106,21 @@ export function Projects() {
           </div>
           <div className="div-projects--details">
             <img
-              src="https://res.cloudinary.com/devwm/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"
+              src="https://res.cloudinary.com/devwm/image/upload/v1685985900/portofolio/quotegenerator/ftly0q795ekqbwqm6vgz.png"
               alt="projects"
               className="project-border"
             />
-            <h2>GetFood</h2>
+            <h2>Inspiration Quote Generator</h2>
             <Typography>
-              GetFood is a beautiful landing page that guide the customer to
-              order healthy food offering a vast range of menus for all kinds of
-              taste. The page was built using basic web development
-              technologies, HTML, CSS and basic vanilla Javascript.
+              A full-stack app that generates quotes using ZenQuotes' API and
+              allows the user to download them. Throughout the process, I delved
+              into various aspects of development, such as state management,
+              hooks, debugging, GraphQl modeling, the use of AWS Amplify which
+              empowered my development, enabling seamless integration and
+              scalable solutions.
             </Typography>
             <div
-              onClick={() => navigate("/project-getfood")}
+              onClick={() => navigate("/project-quotegenerator")}
               className="btn__view--project"
             >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>

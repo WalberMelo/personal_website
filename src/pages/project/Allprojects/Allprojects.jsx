@@ -108,6 +108,29 @@ export function Allprojects({ theme }) {
           </div>
           <div className="div-projects--details">
             <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1685985900/portofolio/quotegenerator/ftly0q795ekqbwqm6vgz.png"
+              alt="projects"
+              className="project-border"
+            />
+            <h2>Inspiration Quote Generator</h2>
+            <Typography>
+              A full-stack app that generates quotes using ZenQuotes' API and
+              allows the user to download them. Throughout the process, I delved
+              into various aspects of development, such as state management,
+              hooks, debugging, GraphQl modeling, the use of AWS Amplify which
+              empowered my development, enabling seamless integration and
+              scalable solutions.
+            </Typography>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-quotegenerator")}
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </div>
+          </div>
+          <div className="div-projects--details">
+            <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"
               alt="projects"
               className="project-border"
