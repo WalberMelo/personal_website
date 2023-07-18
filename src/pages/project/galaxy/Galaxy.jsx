@@ -1,4 +1,3 @@
-import "./Galaxy.css";
 import Footer from "../../../components/footer/Footer";
 import React from "react";
 import { Typography } from "@mui/material";
