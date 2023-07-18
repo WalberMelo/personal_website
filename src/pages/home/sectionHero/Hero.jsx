@@ -11,7 +11,6 @@ import Greeting from "./Greeting";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import { Typography } from "@mui/material";
 
 export function Hero(theme) {
   const navigate = useNavigate();

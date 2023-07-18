@@ -150,6 +150,28 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </div>
           </div>
+          <div className="div-projects--details">
+            <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1689646861/portofolio/starwars/l9rrukypdxcsozzes53i.png"
+              alt="projects"
+              className="project-border"
+            />
+            <h2>Star Wars Galaxy Guide</h2>
+            <Typography>
+              The Star Wars Galaxy Guide is small full-stack project that
+              utilizes the Star Wars API SWAPI. With a user-friendly interface,
+              our application allows you to explore the Star Wars universe,
+              accessing detailed information about films, characters, starships,
+              and vehicles.
+            </Typography>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-starwars")}
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </div>
+          </div>
         </div>
       </section>
       <CurrentProject />

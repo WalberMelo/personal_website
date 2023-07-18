@@ -15,7 +15,6 @@ import {
 } from "react-icons/fa";
 import {
   SiStyledcomponents,
-  SiMaterialui,
   SiRedux,
   SiTypescript,
   SiJavascript,
@@ -73,10 +72,10 @@ export function Skills() {
                     Styled Component
                   </Typography>
                 </div>
-                <div>
+                {/* <div>
                   <SiMaterialui />
                   <Typography component={"span"}>MaterialUI</Typography>
-                </div>
+                </div> */}
                 <div>
                   <SiJavascript />
                   <Typography component={"span"}>JavaScript</Typography>

@@ -16,6 +16,7 @@ import Quizz from "./pages/project/quizz/Quizz";
 import Getfood from "./pages/project/getfood/Getfood";
 import Cooker from "./pages/project/cooker/Cooker";
 import QuoteGenerator from "./pages/project/quoteGenerator/quoteGenerator";
+import Galaxy from "./pages/project/galaxy/Galaxy";
 
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
@@ -129,6 +130,15 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <QuoteGenerator theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-starwars"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <Galaxy theme={theme} />
                 </>
               }
             />

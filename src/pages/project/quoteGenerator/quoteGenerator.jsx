@@ -12,7 +12,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiStyledcomponents,
-  SiMaterialui,
+  // SiMaterialui,
   SiAmazonaws,
   SiGraphql,
 } from "react-icons/si";
@@ -127,7 +127,6 @@ function QuoteGenerator({ theme }) {
         <div className="design-figma">
           <div>
             <Box sx={{ display: "flex" }}>
-              <SiMaterialui />
               <Typography sx={{ ml: 1, mb: 2, mr: 4 }}>
                 <b>Material UI</b>
               </Typography>
