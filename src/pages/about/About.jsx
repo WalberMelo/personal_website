@@ -32,12 +32,11 @@ function About({ theme }) {
               I am a developer who is fascinated by how technology can improve
               people's live and transform our society. I describe myself as
               open-minded which adapt well to new situations, also often coming
-              up with new and innovative ideas, creative and always open to
-              experience. I like to learn through experience and deal with
-              problems by diving right in. Also, I enjoy meeting new people,
-              making contacts and help my network. I am a goal-oriented person
-              who does not hesitate to make an extra effort to accomplish any
-              task or challenge. I believe that active listening and
+              up with innovative ideas. I like to learn through experience and
+              deal with problems by diving right in. Also, I enjoy meeting new
+              people, making contacts and help my network. I am a goal-oriented
+              person who does not hesitate to make an extra effort to accomplish
+              any task or challenge. I believe that active listening and
               communication are essential for effective collaboration.
             </p>
             <p>
