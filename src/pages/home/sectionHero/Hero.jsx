@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import "./hero.css";
 
 //Components
-import foto from "../../../assets/hero/man.jpeg";
 import Aspas from "../../../assets/hero/aspas.png";
+import foto from "../../../assets/hero/man.jpeg";
 import Greeting from "./Greeting";
+import LottieAnimation from "../../../components/animation/LottieAnimation";
 
 //Material UI //
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -27,6 +28,8 @@ export function Hero(theme) {
 
   return (
     <section className="section-hero" id="scrollToTop">
+      <LottieAnimation />
+
       <div className="hero__container">
         <div className="hero__container--text box">
           <div className="hero-text--greetings fadeIn">

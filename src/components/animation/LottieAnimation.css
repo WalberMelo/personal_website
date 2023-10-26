@@ -1,0 +1,29 @@
+.lottie_container {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+
+.player {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 764px) {
+  .player {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .lottie_container {
+    position: absolute;
+    top: 15px;
+    right: 3%;
+  }
+  .player {
+    width: 100px;
+    height: 100px;
+  }
+}

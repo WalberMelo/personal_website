@@ -23,6 +23,7 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { Opacity } from "@mui/icons-material";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -53,6 +54,18 @@ function MyApp() {
                       position: "absolute",
                       right: "2%",
                       zIndex: "1000",
+                      backgroundColor:
+                        theme.palette.mode === "light" ? "#c1adef" : "#9e76fb",
+                      transform: "translateY(-10)",
+                      animation: "moveUpDown 0.8s infinite alternate",
+                      "@keyframes moveUpDown": {
+                        from: {
+                          transform: "translateY(0)",
+                        },
+                        to: {
+                          transform: "translateY(-10px)",
+                        },
+                      },
                     }}
                     className="btn__Color--Mode"
                     onClick={colorMode.toggleColorMode}
