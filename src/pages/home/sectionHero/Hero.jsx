@@ -49,8 +49,6 @@ export function Hero(theme) {
               <br />
             </p>
             <p className="hero-text--job">
-              <span>Web</span> <span>Designer</span> <span>and</span>
-              <br />
               <span>Full Stack </span>
               <span>{renderThemeColor()}</span>
             </p>
