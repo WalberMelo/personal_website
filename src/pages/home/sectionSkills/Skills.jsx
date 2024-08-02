@@ -27,6 +27,7 @@ import {
   SiJest,
   SiPostman,
   SiExpress,
+  SiMui,
 } from "react-icons/si";
 import { AiOutlineRobot } from "react-icons/ai";
 
@@ -74,10 +75,10 @@ export function Skills() {
                     Styled Component
                   </Typography>
                 </div>
-                {/* <div>
-                  <SiMaterialui />
+                <div>
+                  <SiMui />
                   <Typography component={"span"}>MaterialUI</Typography>
-                </div> */}
+                </div>
                 <div>
                   <SiJavascript />
                   <Typography component={"span"}>JavaScript</Typography>

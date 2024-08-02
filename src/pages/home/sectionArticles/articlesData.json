@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Unlocking the potential of LLMs: A developer’s guide to prompt engineering",
+    "description": "Welcome to a comprehensive overview of the course ‘ChatGPT Prompt Engineering for Developers’, elaborated by DeepLearningAI in collaboration with OpenAI…",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6DYSCM31tICowL2OIgL0Mg.png",
+    "link": "https://medium.com/@walbermelo/unlocking-the-potential-of-llms-a-developers-guide-to-prompt-engineering-61e801de3f37"
+  },
+  {
+    "title": "Enhancing user experience with progressive rendering: Strategies and Examples",
+    "description": "In the fast-paced digital world, where user attention is fleeting, the performance of web applications plays a crucial role in retaining users. One effective approach optimize performance…",
+    "image": "https://miro.medium.com/v2/resize:fit:1000/format:webp/1*fac0M0ttK1KHm0b4GrC0fQ.jpeg",
+    "link": "https://medium.com/@walbermelo/enhancing-user-experience-with-progressive-rendering-strategies-and-examples-88d3e3542acc"
+  },
+  {
+    "title": "Building Efficient Email templates with MJML and Node.JS — Send it to recipients",
+    "description": "In today’s digital world, email remains a powerful tool for communicating with customers, partners, and potential leads. However, creating compelling and personalized emails…",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qTGubblZ2tTVNbeT1avnsyQK-0vfud1dgA&s",
+    "link": "https://medium.com/@walbermelo/building-efficient-email-templates-with-mjml-and-node-js-send-it-to-recipients-305ade1f58d5"
+  },
+  {
+    "title": "Mastering Binary Search for efficient data retrieval",
+    "description": "In the realm of software development, efficiency is paramount. Whether you're dealing with a small-scale application or a large-scale system, optimizing the retrieval of data…",
+    "image": "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsdkre5ris62p0rt2do7w.jpg",
+    "link": "https://dev.to/walbermelo/mastering-binary-search-for-efficient-data-retrieval-28im"
+  },
+  {
+    "title": "Testes Estáticos vs. Testes Unitários vs. Testes de Integração vs. Testes E2E",
+    "description": "Este artigo é uma tradução de 'Static vs Unit vs Integration vs E2E Testing for Frontend Apps' por Kent C. Dodds. Fiz esta tradução porque considero a ideia de Troféu de Teste útil…",
+    "image": "https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fy4012mc3wikxfgg5snbg.png",
+    "link": "https://dev.to/walbermelo/testes-estaticos-vs-testes-unitarios-vs-testes-de-integracao-vs-testes-e2e-para-aplicacoes-frontend-4kbm"
+  }
+]

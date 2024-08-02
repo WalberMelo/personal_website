@@ -26,13 +26,14 @@ const pages = [
   >
     Home
   </NavLink>,
-  <NavLink to="/about">About me</NavLink>,
+  <NavLink to="/about">About</NavLink>,
   <Link activeClass="active" smooth spy to="skills">
     Skills
   </Link>,
   <Link activeClass="active" smooth spy to="projects">
     Projects
   </Link>,
+  <NavLink to="/articles">Articles</NavLink>,
 ];
 
 function ResponsiveAppBar({ theme }) {

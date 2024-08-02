@@ -25,6 +25,7 @@ import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Opacity } from "@mui/icons-material";
+import Articles from "./pages/home/sectionArticles/Articles";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -152,6 +153,15 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <QuoteGenerator theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/articles"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <Articles theme={theme} />
                 </>
               }
             />

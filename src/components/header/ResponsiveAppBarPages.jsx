@@ -53,6 +53,14 @@ const pages = [
   >
     Projects
   </NavLink>,
+  <NavLink
+    to="/articles"
+    style={({ isActive }) => ({
+      color: isActive ? "#a7c8f7" : "inherit",
+    })}
+  >
+    Articles
+  </NavLink>,
 ];
 
 function ResponsiveAppBarPages({ theme }) {
