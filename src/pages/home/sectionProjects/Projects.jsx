@@ -26,6 +26,28 @@ export function Projects() {
         <div className="grid-projects">
           <div className="div-projects--details">
             <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1722596157/portofolio/Attendance%20Control/ak1yv2htzpfpaawrjreh.png"
+              alt="project"
+              className="project-border"
+            />
+            <h2>Attendance Control</h2>
+            <Typography>
+              Built with Vue3 and Vuetify the app is a web-based time and
+              attendance tracking PWA that provides a detailed record of your
+              employees' work hours. The app automatically records clock-in and
+              clock-out times but also offers the flexibility to manually input
+              hours for specific instances for management system.
+            </Typography>
+            <div
+              onClick={() => navigate("/project-attendance")}
+              className="btn__view--project"
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </div>
+          </div>
+          <div className="div-projects--details">
+            <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
               alt="project"
               className="project-border"
@@ -98,29 +120,6 @@ export function Projects() {
             </Typography>
             <div
               onClick={() => navigate("/project-cooker")}
-              className="btn__view--project"
-            >
-              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
-              <ChevronRightIcon />
-            </div>
-          </div>
-          <div className="div-projects--details">
-            <img
-              src="https://res.cloudinary.com/devwm/image/upload/v1685985900/portofolio/quotegenerator/ftly0q795ekqbwqm6vgz.png"
-              alt="projects"
-              className="project-border"
-            />
-            <h2>Inspiration Quote Generator</h2>
-            <Typography>
-              A full-stack app that generates quotes using ZenQuotes' API and
-              allows the user to download them. Throughout the process, I delved
-              into various aspects of development, such as state management,
-              hooks, debugging, GraphQl modeling, the use of AWS Amplify which
-              empowered my development, enabling seamless integration and
-              scalable solutions.
-            </Typography>
-            <div
-              onClick={() => navigate("/project-quotegenerator")}
               className="btn__view--project"
             >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>

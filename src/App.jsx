@@ -12,6 +12,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import { Allprojects } from "./pages/project/Allprojects/Allprojects";
 import Melody from "./pages/project/melody/Melody";
+import Attendance from "./pages/project/controlAttandence/ControlAttendence";
 import Quizz from "./pages/project/quizz/Quizz";
 import Getfood from "./pages/project/getfood/Getfood";
 import Cooker from "./pages/project/cooker/Cooker";
@@ -106,6 +107,15 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <Melody theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-attendance"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <Attendance theme={theme} />
                 </>
               }
             />

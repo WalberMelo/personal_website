@@ -12,6 +12,7 @@ import {
   FaNodeJs,
   FaFigma,
   FaGitAlt,
+  FaVuejs,
 } from "react-icons/fa";
 import {
   SiStyledcomponents,
@@ -27,6 +28,7 @@ import {
   SiPostman,
   SiExpress,
 } from "react-icons/si";
+import { AiOutlineRobot } from "react-icons/ai";
 
 export function Skills() {
   return (
@@ -79,6 +81,10 @@ export function Skills() {
                 <div>
                   <SiJavascript />
                   <Typography component={"span"}>JavaScript</Typography>
+                </div>
+                <div>
+                  <FaVuejs />
+                  <Typography component={"span"}>VueJS</Typography>
                 </div>
                 <div>
                   <FaReact />
@@ -138,13 +144,17 @@ export function Skills() {
                   <FaFigma />
                   <Typography component={"span"}>Figma</Typography>
                 </div>
-                <div>
+                {/* <div>
                   <SiMiro />
                   <Typography component={"span"}>Miro</Typography>
-                </div>
+                </div> */}
                 <div>
                   <SiJest />
                   <Typography component={"span"}>Jest</Typography>
+                </div>
+                <div>
+                  <AiOutlineRobot />
+                  <Typography component={"span"}>AI</Typography>
                 </div>
                 <div>
                   <SiPostman />

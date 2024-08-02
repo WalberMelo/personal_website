@@ -20,16 +20,35 @@ export function Allprojects({ theme }) {
         <div className="div-projects">
           <h1>Projects that I've been working on</h1>
           <p>
-            I like to stay busy and always have a project on hand. I have
-            completed several projects that have allowed me to apply my
-            knowledge and further develop my skills. For example, I have built a
-            web application using React, Node.js and MongoDB, where I
-            implemented features such as user authentication and real-time data
-            management. Take a look in some of projects that I've been working
-            on.
+            I like to stay busy and always have a project on hand implementing
+            new technologies. I have completed several projects enhanced my
+            knowledge and help me improve my skills. Take a look in some of
+            projects that I've been working. on.
           </p>
         </div>
         <div className="grid-projects">
+          <div className="div-projects--details">
+            <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1722596157/portofolio/Attendance%20Control/ak1yv2htzpfpaawrjreh.png"
+              alt="project"
+              className="project-border"
+            />
+            <h2>Attendance Control </h2>
+            <Typography>
+              Built with Vue3 and Vuetify the app is a web-based time and
+              attendance tracking PWA that provides a detailed record of your
+              employees' work hours. The app automatically records clock-in and
+              clock-out times but also offers the flexibility to manually input
+              hours for specific instances for management system.
+            </Typography>
+            <div
+              className="btn__view--project"
+              onClick={() => navigate("/project-attendance")}
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </div>
+          </div>
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
