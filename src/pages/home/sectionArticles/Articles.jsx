@@ -19,7 +19,7 @@ export default function Articles() {
               <CardMedia
                 component="img"
                 alt={article.title}
-                height="140"
+                height="200"
                 x
                 image={article.image}
               />
