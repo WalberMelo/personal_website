@@ -1,10 +1,7 @@
 import axios from 'axios';
 
-import { ImageNotSupported } from '@mui/icons-material';
-
 export const chatBotModel = async (input: string) => {
-  console.log(input);
-  const API_URL = ImageNotSupported.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
   const API_TOKEN = import.meta.env.VITE_API_TOKEN;
 
   try {

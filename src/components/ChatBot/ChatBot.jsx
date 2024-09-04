@@ -32,6 +32,9 @@ export default function Chatbot(theme) {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+  const API_TOKEN = import.meta.env.VITE_API_TOKEN;
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
@@ -272,6 +275,10 @@ export default function Chatbot(theme) {
                     }}
                   >
                     <code>Developed by 🟣 Walber Melo</code>
+                    <p>
+                      {API_URL}
+                      {API_TOKEN}
+                    </p>
                   </Box>
                 </Box>
               </>

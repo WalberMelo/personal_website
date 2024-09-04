@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "node -r dotenv/config ./node_modules/.bin/vite",
+    "build": "node -r dotenv/config ./node_modules/.bin/vite build",
+    "preview": "node -r dotenv/config ./node_modules/.bin/vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -20,10 +20,8 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
-    "@pinecone-database/pinecone": "^3.0.2",
     "axios": "^1.7.7",
-    "cheerio": "^1.0.0",
-    "langchain": "^0.1.37",
+    "dotenv": "^16.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
