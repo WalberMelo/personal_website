@@ -12,12 +12,10 @@ import {
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import ChatIcon from "@mui/icons-material/Chat";
-import MinimizeIcon from "@mui/icons-material/Minimize";
-import MaximizeIcon from "@mui/icons-material/Maximize";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import chatBotModel from "./chatBotModel";
 import CloseIcon from "@mui/icons-material/Close";
+import { chatBotModel } from "./chatBotModel";
 
 export default function Chatbot(theme) {
   let mode = theme;
@@ -29,9 +27,18 @@ export default function Chatbot(theme) {
     },
   ]);
   const [input, setInput] = useState("");
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSend = async () => {
     if (input.trim() === "") return;
@@ -44,12 +51,11 @@ export default function Chatbot(theme) {
     };
     setMessages((prev) => [...prev, newMessage]);
     setInput("");
+    setIsLoading(true);
 
     try {
-      // Call the chatBotModel with the user's input to get the bot's response
-      const botResponseText = await chatBotModel(input);
-
-      // Add the bot's response to the chat
+      const response = await chatBotModel(input);
+      const botResponseText = response.answer;
       const botResponse = {
         id: messages.length + 2,
         text: botResponseText,
@@ -65,29 +71,8 @@ export default function Chatbot(theme) {
       };
       setMessages((prev) => [...prev, errorMessage]);
     }
+    setIsLoading(false);
   };
-
-  // const handleSend = async () => {
-  //   if (input.trim() === "") return;
-
-  //   const newMessage = {
-  //     id: messages.length + 1,
-  //     text: input,
-  //     isUser: true,
-  //   };
-
-  //   setMessages((prev) => [...prev, newMessage]);
-  //   setInput("");
-
-  //   setTimeout(() => {
-  //     const botResponse = {
-  //       id: messages.length + 2,
-  //       text: `You asked: ${input}`,
-  //       isUser: false,
-  //     };
-  //     setMessages((prev) => [...prev, botResponse]);
-  //   }, 1000);
-  // };
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -108,7 +93,6 @@ export default function Chatbot(theme) {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  //TODO : Make chatbot open after page been loaded
   return (
     <>
       <Zoom in={!isOpen}>
@@ -241,6 +225,14 @@ export default function Chatbot(theme) {
                       )}
                     </div>
                   ))}
+
+                  {isLoading && (
+                    <div style={{ textAlign: "center", margin: "10px 0" }}>
+                      <Typography variant="body2" color="textSecondary">
+                        Processing...
+                      </Typography>
+                    </div>
+                  )}
                   <div ref={messagesEndRef} />
                 </Box>
                 <Box sx={{ p: 2, bgcolor: "background.paper" }}>
