@@ -275,10 +275,6 @@ export default function Chatbot(theme) {
                     }}
                   >
                     <code>Developed by 🟣 Walber Melo</code>
-                    <p>
-                      {API_URL}
-                      {API_TOKEN}
-                    </p>
                   </Box>
                 </Box>
               </>
