@@ -26,6 +26,7 @@ import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Opacity } from "@mui/icons-material";
 import Articles from "./pages/home/sectionArticles/Articles";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -168,6 +169,7 @@ function MyApp() {
           </Routes>
         </ScrollToTop>
       </Router>
+      <SpeedInsights />
     </Box>
   );
 }
