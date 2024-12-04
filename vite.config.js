@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
       react(),
       sitemap({
         hostname: "https://www.walbermelo.com",
+        robots: [{ userAgent: "*", allow: "/" }],
         routes: [
           "/",
           "/about",
