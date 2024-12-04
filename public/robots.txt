@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /404
+Disallow: /private/
+Allow: /
+Sitemap: https://www.walbermelo.com/sitemap.xml

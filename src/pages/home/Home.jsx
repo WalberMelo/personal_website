@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Hero } from "./sectionHero/Hero";
 import { Skills } from "./sectionSkills/Skills";
 import { Projects } from "./sectionProjects/Projects";
@@ -10,15 +11,27 @@ function Home({ theme }) {
   const { mode } = theme.palette;
 
   return (
-    <main className="home__page">
-      <Hero theme={mode} />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer theme={mode} />
-      <Chatbot them={mode} />
-    </main>
+    <div>
+      <Helmet>
+        <title>Walber Melo - Home</title>
+        <meta
+          name="description"
+          content="Welcome to Walber Melo's portfolio. Discover his Full Stack Developer expertise in modern web technologies, LLM optimization, and AI integration."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack Developer, Frontend Developer, Backend Developer, JavaScript, TypeScript, Python, AI integration, portfolio"
+        />
+        <link rel="canonical" href="https://www.walbermelo.com/" />
+      </Helmet>
+      <main className="home__page">
+        <Hero theme={mode} />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer theme={mode} />
+        <Chatbot them={mode} />
+      </main>
+    </div>
   );
 }
-
-export default Home;

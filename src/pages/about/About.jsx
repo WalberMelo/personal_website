@@ -16,7 +16,19 @@ function About({ theme }) {
     }
   };
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>About Walber Melo</title>
+        <meta
+          name="description"
+          content="Learn more about Walber Melo, a Full Stack Developer with expertise in JavaScript, TypeScript, Python, and AI integration."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack Developer, About Walber Melo, LLM optimization, AI integration"
+        />
+        <link rel="canonical" href="https://www.walbermelo.com/about" />
+      </Helmet>
       <main>
         <div className="about-page">
           <figure>
@@ -41,16 +53,15 @@ function About({ theme }) {
               team environments.
             </p>
             <p>
-              I worked for many years as an IT technical support before starting
-              my developer journey. Those years gave me a lot of experience
-              working alongside multicultural teams and following standard
-              approaches applied in the sector. With this background, I took the
-              decisions to expand my knowledge in the development area by
-              completing a master's degree in software development. The program
-              equipped me with a strong foundation necessary to build modern
-              applications with a collaborative work methodology simulating
-              real-world challenges using the latest technologies and
-              techniques.
+              I worked for many years as IT technical support before starting my
+              developer journey. Those years gave me a lot of experience working
+              alongside multicultural teams and following standard approaches
+              applied in the sector. With this background, I took the decisions
+              to expand my knowledge in the development area by completing a
+              master's degree in software development. The program equipped me
+              with a strong foundation necessary to build modern applications
+              with a collaborative work methodology simulating real-world
+              challenges using the latest technologies and techniques.
             </p>
             <p>
               My goal is to produce work that is consistently strong and
@@ -64,7 +75,7 @@ function About({ theme }) {
         <figure className="signature">{signature()}</figure>
         <Footer theme={mode} />
       </main>
-    </>
+    </div>
   );
 }
 
