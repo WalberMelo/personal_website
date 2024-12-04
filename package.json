@@ -1,7 +1,7 @@
 {
   "name": "walber melo wepage",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "type": "module",
   "scripts": {
     "dev": "node -r dotenv/config ./node_modules/.bin/vite",
