@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
 import articlesData from "./articlesData.json";
 
+//Articles
+
 export default function Articles() {
   return (
     <main>
