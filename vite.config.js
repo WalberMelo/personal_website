@@ -13,25 +13,7 @@ export default defineConfig(({ mode }) => {
     mode === "production" ? env.VITE_API_TOKEN_PROD : env.VITE_API_TOKEN_DEV;
 
   return {
-    plugins: [
-      react(),
-      sitemap({
-        hostname: "https://www.walbermelo.com",
-        robots: [{ userAgent: "*", allow: "/" }],
-        routes: [
-          "/",
-          "/about",
-          "/projects",
-          "/project-melody",
-          "/project-attendance",
-          "/project-quizz",
-          "/project-getfood",
-          "/project-cooker",
-          "/project-quotegenerator",
-          "/articles",
-        ],
-      }),
-    ],
+    plugins: [react()],
     define: {
       "process.env": {}, // This line is not really needed unless you're using process.env directly
       "import.meta.env.VITE_API_URL": JSON.stringify(API_URL),

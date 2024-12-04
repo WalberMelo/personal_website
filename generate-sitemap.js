@@ -6,8 +6,6 @@
 // 	•	Dynamic Data Support: Easily integrate data from APIs, databases, or other external sources.
 // 	•	Custom Logic: Implement specific rules for inclusion/exclusion.
 
-//* NOTE Why not use it: Since my page uses static routes defined in vite.config.js, vite-plugin-sitemap is the best fit. It’s easy to implement, integrates seamlessly with Vite, and generates the sitemap automatically during the build process. This avoids the need for additional scripts or manual processes.
-
 const fs = require("fs");
 const path = require("path");
 

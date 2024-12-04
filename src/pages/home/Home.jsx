@@ -7,7 +7,7 @@ import Contact from "./sectionContact/Contact";
 import Footer from "../../components/footer/Footer";
 import Chatbot from "../../components/ChatBot/ChatBot";
 
-function Home({ theme }) {
+export default function Home({ theme }) {
   const { mode } = theme.palette;
 
   return (
