@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.10.5",
     "@formspree/react": "^2.4.1",
     "@jridgewell/sourcemap-codec": "^1.4.14",
-    "@langchain/community": "^0.2.31",
+    "@langchain/community": "^0.3.3",
     "@langchain/core": "^0.2.30",
     "@langchain/openai": "^0.2.8",
     "@langchain/pinecone": "^0.0.9",
