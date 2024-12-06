@@ -3,6 +3,7 @@ import "./about.css";
 import Footer from "../../components/footer/Footer";
 import darkSignature from "../../assets/about/dark-signature.png";
 import lightSignature from "../../assets/about/light-signature.png";
+import { Helmet } from "react-helmet-async";
 
 function About({ theme }) {
   const { mode } = theme.palette;
