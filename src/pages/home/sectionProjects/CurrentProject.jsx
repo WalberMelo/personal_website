@@ -15,6 +15,9 @@ function CurrentProject() {
           free.
         </p>
         <p className="current__project--soon">COMING SOON</p>
+        <button onClick={() => navigate("/projects")} className="btn-hero">
+          View My Portfolio
+        </button>
       </div>
     </section>
   );
