@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CurrentProject from "../../home/sectionProjects/CurrentProject";
 
 /* Material UI  */
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Typography from "@mui/material/Typography";
 
@@ -27,6 +27,7 @@ export function Allprojects({ theme }) {
           </p>
         </div>
         <div className="grid-projects">
+          {/* Attendance control */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1722596157/portofolio/Attendance%20Control/ak1yv2htzpfpaawrjreh.png"
@@ -49,6 +50,90 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </div>
           </div>
+
+          {/* Ubikos booking */}
+          <div className="div-projects--details">
+            <Box>
+              <Grid sx={{ mb: 2 }} container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{ width: "100%", height: "100%", overflow: "hidden" }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/devwm/image/upload/c_scale,h_1555,w_938/v1733418473/portofolio/stayeasy/zknqow13bselx31xxdjg.png"
+                      alt="project"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{ width: "100%", height: "100%", overflow: "hidden" }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/devwm/image/upload/v1733445016/portofolio/Eneya/v3qmjee9o7txjplpoq1d.png"
+                      alt="project"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  </Box>
+                </Grid>
+              </Grid>
+            </Box>
+
+            <h2>Roomly</h2>
+            <Typography>
+              The mobile web app project aim to enhance hotel efficiency and
+              guest convenience by integrating advanced features like online
+              booking, reservation payment, check-ins, keyless access, and
+              OCR-driven form completion into our PMS software, delivering a
+              seamless and modern hospitality experience.
+            </Typography>
+            <div
+              onClick={() => navigate("/project-roomly")}
+              className="btn__view--project"
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </div>
+          </div>
+
+          {/* Eneya */}
+          <div className="div-projects--details">
+            <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1733443989/portofolio/Eneya/glvdzdff3ml8hqrbzhdi.png"
+              alt="project"
+              className="project-border"
+            />
+            <h2>Eneya</h2>
+            <Typography>
+              I developed this company page using Next.js to deliver a fast,
+              modern, and responsive experience. The site showcases the
+              company’s services, including renovations, maintenance, sales and
+              installation, and custom projects, providing a user-friendly
+              interface for clients to explore their offerings.
+            </Typography>
+            <a
+              href="https://www.eneya.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn__view--project"
+            >
+              <Typography sx={{ fontWeight: "600" }}>View project</Typography>
+              <ChevronRightIcon />
+            </a>
+          </div>
+
+          {/* Melody Music */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
@@ -71,6 +156,8 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </div>
           </div>
+
+          {/* Quizz */}
           <div className="div-projects--details">
             <Box id="quizz-grid">
               <Box sx={{ mr: 2 }}>
@@ -104,6 +191,8 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </Box>
           </div>
+
+          {/* Cooker */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673901205/portofolio/cooker/vh04bav9hqqkifo78yvc.png"
@@ -125,6 +214,8 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </div>
           </div>
+
+          {/* Quote Generator */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1685985900/portofolio/quotegenerator/ftly0q795ekqbwqm6vgz.png"
@@ -148,6 +239,8 @@ export function Allprojects({ theme }) {
               <ChevronRightIcon />
             </div>
           </div>
+
+          {/* GetFood */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673447922/portofolio/getfood/v1mi8mylgt6256wdodly.png"

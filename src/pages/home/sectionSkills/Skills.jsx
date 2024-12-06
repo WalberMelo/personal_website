@@ -37,12 +37,15 @@ export function Skills() {
       <div className="skills--title">
         <h1>My Skills</h1>
         <Typography component={"span"}>
-          I have gained a wide range of skills through my studies, projects, and
-          work experience. I have learned the fundamentals of web development,
-          including HTML, CSS, JavaScript, Typescript and various frameworks
-          such as React, NextJS, Redux. I have also gained experience with
-          backend technologies such as Nodejs, Nestjs, Express, SQL, MongoDB and
-          cloud serverless using AWS services as infrastructure.
+          I have developed a diverse and comprehensive skill set through my
+          professional projects, and work experiences. My expertise in web
+          development encompasses foundational technologies such as HTML, CSS,
+          JavaScript, and TypeScript, as well as modern frameworks and libraries
+          including React, Next.js, Vue.js, and Redux. On the backend, I have
+          honed my skills with Node.js, Nest.js, and Express.js, complemented by
+          experience in both relational databases like PostgreSQL and MySQL, and
+          non-relational solutions like MongoDB and Vector databases such
+          Pinecone.
         </Typography>
       </div>
       <div className="stacks__skills--container">

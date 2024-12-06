@@ -13,8 +13,8 @@
 }
 
 .div-projects > h1 {
-  font-size: 2rem;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 .div-projects {
   margin-bottom: 4rem;
@@ -24,22 +24,22 @@
 
 .grid-projects {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
   column-gap: 4rem;
   row-gap: 4rem;
 }
 
 .div-projects--details {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 0.5fr auto auto auto;
+  grid-template-columns: 1fr;
 }
 
 .div-projects--details > img {
   margin-bottom: 2em;
-  width: 100%;
   border-radius: 4px;
+  width: 100%;
 }
 
 .div-projects--details > h2 {
@@ -71,8 +71,8 @@
 }
 
 .quizzical-img {
-  width: 100%;
   border-radius: 8px;
+  width: 100%;
 }
 
 /*************************************/
@@ -92,8 +92,8 @@
 }
 
 .current__project > h2 {
-  font-size: 2rem;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .current__project > p {
@@ -105,9 +105,9 @@
 }
 
 .current__project--img {
+  opacity: 95%;
   border-radius: 8px;
   width: 90%;
-  opacity: 95%;
 }
 
 /***********************/
@@ -140,8 +140,8 @@
   }
   .grid-projects {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     column-gap: 8rem;
     row-gap: 4rem;
   }

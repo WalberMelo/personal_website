@@ -17,6 +17,7 @@ import Quizz from "./pages/project/quizz/Quizz";
 import Getfood from "./pages/project/getfood/Getfood";
 import Cooker from "./pages/project/cooker/Cooker";
 import QuoteGenerator from "./pages/project/quoteGenerator/quoteGenerator";
+import Roomly from "./pages/project/roomly/Roomly";
 
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
@@ -24,7 +25,6 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Opacity } from "@mui/icons-material";
 import Articles from "./pages/home/sectionArticles/Articles";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
@@ -154,6 +154,24 @@ function MyApp() {
                 <>
                   <ResponsiveAppBarPages theme={theme} />
                   <QuoteGenerator theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/project-roomly"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <Roomly theme={theme} />
+                </>
+              }
+            />
+            <Route
+              path="/eneya"
+              element={
+                <>
+                  <ResponsiveAppBarPages theme={theme} />
+                  <Articles theme={theme} />
                 </>
               }
             />

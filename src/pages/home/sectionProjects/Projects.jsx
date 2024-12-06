@@ -1,9 +1,9 @@
 import "./projects.css";
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Typography from "@mui/material/Typography";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CurrentProject from "./CurrentProject";
 
 export function Projects() {
@@ -24,6 +24,7 @@ export function Projects() {
           </p>
         </div>
         <div className="grid-projects">
+          {/* Attendance Control */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1722596157/portofolio/Attendance%20Control/ak1yv2htzpfpaawrjreh.png"
@@ -46,6 +47,7 @@ export function Projects() {
               <ChevronRightIcon />
             </div>
           </div>
+          {/* Melody Music */}
           <div className="div-projects--details">
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1673290300/portofolio/ccc2eatx4ffqswbwnpvw.png"
@@ -68,58 +70,80 @@ export function Projects() {
               <ChevronRightIcon />
             </div>
           </div>
+          {/* Eneya */}
           <div className="div-projects--details">
-            <Box sx={{ mb: 2 }} id="quizz-grid">
-              <Box sx={{ mr: 2 }}>
-                <img
-                  src="https://res.cloudinary.com/devwm/image/upload/v1673345613/portofolio/bwi35cuvhsoq8ekta5oh.png"
-                  alt="projects"
-                  className="quizzical-img"
-                />
-              </Box>
-              <Box>
-                <img
-                  src="https://res.cloudinary.com/devwm/image/upload/v1673394265/portofolio/fsa3q1jkzeyt3zg6m5vg.png"
-                  alt="project"
-                  className="quizzical-img"
-                />
-              </Box>
-            </Box>
-
-            <h2>Quizzical</h2>
+            <img
+              src="https://res.cloudinary.com/devwm/image/upload/v1733443989/portofolio/Eneya/glvdzdff3ml8hqrbzhdi.png"
+              alt="project"
+              className="project-border"
+            />
+            <h2>Eneya</h2>
             <Typography>
-              Quizzical is a small and funny quiz game built with ReactJS. The
-              app will tests your knowledge about nature as a form of
-              entertainment. The users can answer 10 different single-choice
-              questions as many times as they need until finding all the correct
-              results in the game.
+              I developed this company page using Next.js to deliver a fast,
+              modern, and responsive experience. The site showcases the
+              company’s services, including renovations, maintenance, sales and
+              installation, and custom projects, providing a user-friendly
+              interface for clients to explore their offerings.
             </Typography>
-            <Box
-              onClick={() => navigate("/project-quizz")}
+            <a
+              href="https://www.eneya.es/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn__view--project"
             >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
               <ChevronRightIcon />
-            </Box>
+            </a>
           </div>
+          {/* Roomly */}
           <div className="div-projects--details">
-            <img
-              src={
-                "https://res.cloudinary.com/devwm/image/upload/v1673901205/portofolio/cooker/vh04bav9hqqkifo78yvc.png"
-              }
-              alt="projects"
-              className="cooker-img"
-            />
+            <Box>
+              <Grid sx={{ mb: 2 }} container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{ width: "100%", height: "100%", overflow: "hidden" }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/devwm/image/upload/c_scale,h_1555,w_938/v1733418473/portofolio/stayeasy/zknqow13bselx31xxdjg.png"
+                      alt="project"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{ width: "100%", height: "100%", overflow: "hidden" }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/devwm/image/upload/v1733445016/portofolio/Eneya/v3qmjee9o7txjplpoq1d.png"
+                      alt="project"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  </Box>
+                </Grid>
+              </Grid>
+            </Box>
 
-            <h2>Cooker</h2>
+            <h2>Roomly</h2>
             <Typography>
-              Cooker is a recipe app that will help you in your next meal. The
-              app allows users to browse thousands of delicious recipes,
-              bookmark their recipes favorites and also upload your own. It was
-              built with HTML, SASS and advanced vanilla Javascript.
+              The mobile web app project aim to enhance hotel efficiency and
+              guest convenience by integrating advanced features like online
+              booking, reservation payment, check-ins, keyless access, and
+              OCR-driven form completion into our PMS software, delivering a
+              seamless and modern hospitality experience.
             </Typography>
             <div
-              onClick={() => navigate("/project-cooker")}
+              onClick={() => navigate("/project-roomly")}
               className="btn__view--project"
             >
               <Typography sx={{ fontWeight: "600" }}>View project</Typography>
