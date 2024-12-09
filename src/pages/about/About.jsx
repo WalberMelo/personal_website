@@ -28,7 +28,6 @@ function About({ theme }) {
           name="keywords"
           content="Full Stack Developer, About Walber Melo, LLM optimization, AI integration"
         />
-        <link rel="canonical" href="https://www.walbermelo.com/about" />
       </Helmet>
       <main>
         <div className="about-page">

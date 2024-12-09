@@ -13,7 +13,7 @@ export default function Home({ theme }) {
   return (
     <div>
       <Helmet>
-        <title>Walber Melo - Home</title>
+        <title>Walber Melo - Full Stack Developer</title>
         <meta
           name="description"
           content="Welcome to Walber Melo's portfolio. Discover his Full Stack Developer expertise in modern web technologies, LLM optimization, and AI integration."
@@ -22,7 +22,6 @@ export default function Home({ theme }) {
           name="keywords"
           content="Full Stack Developer, Frontend Developer, Backend Developer, JavaScript, TypeScript, Python, AI integration, portfolio"
         />
-        <link rel="canonical" href="https://www.walbermelo.com/" />
       </Helmet>
       <main className="home__page">
         <Hero theme={mode} />
