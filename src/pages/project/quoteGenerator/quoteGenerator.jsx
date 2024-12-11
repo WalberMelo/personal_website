@@ -62,11 +62,22 @@ function QuoteGenerator({ theme }) {
               </Link>
             </Box>
 
+            <video
+              src="https://res.cloudinary.com/devwm/video/upload/e_accelerate:76/v1733937818/portofolio/quotegenerator/dadmn9lafvqa5ijfzilw.mov"
+              controls
+              autoPlay
+              loop
+              muted
+              height={500}
+            >
+              Your browser does not support the video tag.
+            </video>
+            {/* 
             <img
               src="https://res.cloudinary.com/devwm/image/upload/v1685985900/portofolio/quotegenerator/ftly0q795ekqbwqm6vgz.png"
               alt="quote generator app"
               className="project-img img--border"
-            />
+            /> */}
           </Box>
           <Box className="site_features">
             <Typography sx={{ mb: 4 }}>
