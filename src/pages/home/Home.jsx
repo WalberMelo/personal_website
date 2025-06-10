@@ -29,7 +29,7 @@ export default function Home({ theme }) {
         <Projects />
         <Contact />
         <Footer theme={mode} />
-        <Chatbot them={mode} />
+        <Chatbot theme={mode} />
       </main>
     </div>
   );
