@@ -17,8 +17,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CloseIcon from "@mui/icons-material/Close";
 import { chatBotModel } from "./chatBotModel";
 
-export default function Chatbot(theme) {
-  let mode = theme;
+export default function Chatbot({ theme }) {
+  const mode = theme;
   const [messages, setMessages] = useState([
     {
       id: 1, // Added a unique ID for each message
