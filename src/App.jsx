@@ -22,6 +22,7 @@ import Roomly from "./pages/project/roomly/Roomly";
 /* Material UI */
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
+import Tooltip from "@mui/material/Tooltip";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -33,6 +34,24 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 function MyApp() {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
+  const [showThemeHint, setShowThemeHint] = React.useState(false);
+
+  React.useEffect(() => {
+    let revertTimeout;
+    const demoTimeout = setTimeout(() => {
+      colorMode.toggleColorMode();
+      setShowThemeHint(true);
+      revertTimeout = setTimeout(() => {
+        colorMode.toggleColorMode();
+        setShowThemeHint(false);
+      }, 3000);
+    }, 5000);
+
+    return () => {
+      clearTimeout(demoTimeout);
+      if (revertTimeout) clearTimeout(revertTimeout);
+    };
+  }, []);
 
   return (
     <Box
@@ -50,36 +69,43 @@ function MyApp() {
               path="/"
               element={
                 <Box>
-                  <IconButton
-                    sx={{
-                      mt: 1,
-                      top: 30,
-                      position: "absolute",
-                      right: "2%",
-                      zIndex: "1000",
-                      backgroundColor:
-                        theme.palette.mode === "light" ? "#c1adef" : "#9e76fb",
-                      transform: "translateY(-10)",
-                      animation: "moveUpDown 0.8s infinite alternate",
-                      "@keyframes moveUpDown": {
-                        from: {
-                          transform: "translateY(0)",
-                        },
-                        to: {
-                          transform: "translateY(-10px)",
-                        },
-                      },
-                    }}
-                    className="btn__Color--Mode"
-                    onClick={colorMode.toggleColorMode}
-                    color="inherit"
+                  <Tooltip
+                    title="Click here to switch themes."
+                    open={showThemeHint}
+                    placement="left"
+                    arrow
                   >
-                    {theme.palette.mode === "dark" ? (
-                      <WbSunnyOutlinedIcon />
-                    ) : (
-                      <DarkModeIcon />
-                    )}
-                  </IconButton>
+                    <IconButton
+                      sx={{
+                        mt: 1,
+                        top: 30,
+                        position: "absolute",
+                        right: "2%",
+                        zIndex: "1000",
+                        backgroundColor:
+                          theme.palette.mode === "light" ? "#c1adef" : "#9e76fb",
+                        transform: "translateY(-10)",
+                        animation: "moveUpDown 0.8s infinite alternate",
+                        "@keyframes moveUpDown": {
+                          from: {
+                            transform: "translateY(0)",
+                          },
+                          to: {
+                            transform: "translateY(-10px)",
+                          },
+                        },
+                      }}
+                      className="btn__Color--Mode"
+                      onClick={colorMode.toggleColorMode}
+                      color="inherit"
+                    >
+                      {theme.palette.mode === "dark" ? (
+                        <WbSunnyOutlinedIcon />
+                      ) : (
+                        <DarkModeIcon />
+                      )}
+                    </IconButton>
+                  </Tooltip>
                   <ResponsiveAppBar theme={theme} />
                   <Home theme={theme} />
                 </Box>
