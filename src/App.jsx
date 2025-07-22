@@ -69,12 +69,7 @@ function MyApp() {
               path="/"
               element={
                 <Box>
-                  <Tooltip
-                    title="Click here to switch themes."
-                    open={showThemeHint}
-                    placement="left"
-                    arrow
-                  >
+                  <Tooltip title="Click here to switch themes." placement="left" arrow>
                     <IconButton
                       sx={{
                         mt: 1,
@@ -106,6 +101,23 @@ function MyApp() {
                       )}
                     </IconButton>
                   </Tooltip>
+                  {showThemeHint && (
+                    <Box
+                      sx={{
+                        position: "absolute",
+                        right: "60px",
+                        top: 40,
+                        bgcolor: "background.paper",
+                        color: "text.primary",
+                        p: 1,
+                        borderRadius: 1,
+                        boxShadow: 3,
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      Click here to switch themes.
+                    </Box>
+                  )}
                   <ResponsiveAppBar theme={theme} />
                   <Home theme={theme} />
                 </Box>
