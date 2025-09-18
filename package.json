@@ -22,7 +22,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
     "@vercel/speed-insights": "^1.0.12",
-    "axios": "^1.7.7",
+    "axios": "^1.12.2",
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "mapbox-gl": "^3.8.0",
