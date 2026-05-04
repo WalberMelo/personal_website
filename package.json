@@ -14,6 +14,10 @@
     "@emotion/styled": "^11.10.5",
     "@formspree/react": "^2.4.1",
     "@jridgewell/sourcemap-codec": "^1.4.14",
+    "@langchain/community": "^0.3.3",
+    "@langchain/core": "^0.2.30",
+    "@langchain/openai": "^0.2.8",
+    "@langchain/pinecone": "^0.0.9",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
@@ -32,6 +36,7 @@
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
+    "@types/pdfjs-dist": "^2.10.378",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^6.0.1",
